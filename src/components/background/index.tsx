@@ -1,5 +1,5 @@
 import { FC, ReactNode } from 'react'
-import s from './Background.module.scss'
+import s from './styles.module.scss'
 
 interface Props {
   children: ReactNode

@@ -12,7 +12,10 @@ const Header: FC<Props> = ({ isHeaderListOpen, setIsHeaderListOpen }) => {
   const isDarkMode = false
 
   return (
-    <div style={{ backgroundColor: isDarkMode ? '#202124' : '#fff' }} className={styles.header}>
+    <div
+      style={{ backgroundColor: isDarkMode ? '#202124' : '' }}
+      className={styles.header}
+    >
       <LogoSvg
         svgTag={{ style: { cursor: 'pointer' } }}
         pathTag={isDarkMode ? { fill: '#fff' } : {}}
