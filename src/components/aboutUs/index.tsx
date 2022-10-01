@@ -1,8 +1,13 @@
-const AboutUs = () => {
+/* eslint-disable react/no-unescaped-entities */
+import Image from 'next/image'
+import s from './styles.module.scss'
+import globe from '../../../public/images/globe.png'
+
+const About = () => {
   return (
-    <div>
-      <div>
-        <h1>About Us</h1>
+    <div className={s.container}>
+      <div className={s.leftSide}>
+        <h1 className={s.title}>About Us</h1>
         <div>
           <p>
             Mendee.Digital is a web development studio with a social impact.
@@ -22,9 +27,19 @@ const AboutUs = () => {
           </p>
         </div>
       </div>
-      <div></div>
+
+      <div className={s.rightSide}>
+        <Image
+          className={s.image}
+          // layout="responsive"
+          width={500}
+          height={500}
+          src={globe}
+          alt="about us picture"
+        />
+      </div>
     </div>
   )
 }
 
-export { AboutUs }
+export { About }

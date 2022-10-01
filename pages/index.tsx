@@ -8,6 +8,7 @@ import Hero from '../src/components/hero'
 const Home: NextPage = () => {
   const [isHeaderListOpen, setIsHeaderListOpen] = useState<boolean>(false)
   const [bgColor, setBgColor] = useState<'normal' | 'dark'>('normal')
+
   return (
     <div
       style={{
