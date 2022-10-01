@@ -1,13 +1,16 @@
+import React from 'react'
 import type { NextPage } from 'next'
 import { Header } from '../src/components/header'
 import { Footer } from '../src/components/footer'
 import { useState } from 'react'
 import Background from '../src/components/background'
-import Hero from '../src/components/hero'
+import { About } from '../src/components/aboutUs'
+import { BluredBack } from '../src/components/bluredBackground'
 
-const Home: NextPage = () => {
+const AboutUs = () => {
   const [isHeaderListOpen, setIsHeaderListOpen] = useState<boolean>(false)
-  const [bgColor, setBgColor] = useState<'normal' | 'dark'>('normal')
+  const [bgColor, setBgColor] = useState<'normal' | 'dark'>('dark')
+  const isDarkMode = true
 
   return (
     <div
@@ -22,17 +25,12 @@ const Home: NextPage = () => {
         isHeaderListOpen={isHeaderListOpen}
         setIsHeaderListOpen={setIsHeaderListOpen}
       />
+
       <Background bgColor={bgColor}>
-        {isHeaderListOpen ? (
-          ''
-        ) : (
-          <Hero bgColor={bgColor} isHeaderListOpen={isHeaderListOpen} />
-        )}
-        {/* <Hero bgColor={bgColor} isHeaderListOpen={isHeaderListOpen} /> */}
+        <BluredBack>{isHeaderListOpen ? '' : <About />}</BluredBack>
       </Background>
-      <Footer isHeaderListOpen={isHeaderListOpen} />
     </div>
   )
 }
 
-export default Home
+export default AboutUs
