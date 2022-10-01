@@ -1,0 +1,85 @@
+@import '../../styles/variables.scss';
+
+.footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 100;
+  transition: 200ms;
+  width: 100%;
+
+  @media (min-width: $md) {
+    transform: translateY(0) !important;
+  }
+
+  &__content {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  &__info {
+    font-family: Helvetica, sans-serif;
+    width: 54%;
+    line-height: 120%;
+    font-weight: 300;
+    font-size: 18px;
+    display: none;
+
+    @media (min-width: $md) {
+      display: block;
+    }
+  }
+
+  &__social {
+    width: 50%;
+
+    @media (min-width: $md) {
+      width: 23%;
+    }
+  }
+
+  &__block {
+    padding: 8px 11px 17px 11px;
+
+    @media (min-width: $md) {
+      padding: 20px 40px;
+    }
+
+    @media (min-width: $xl) {
+      padding: 20px 55px 36px 55px;
+    }
+  }
+
+  &__title {
+    font-family: 'Gilroy', Courier, monospace;
+    font-weight: 700;
+    font-size: 18px;
+    margin: 0;
+    text-align: center;
+
+    @media (min-width: $md) {
+      text-align: left;
+    }
+  }
+
+  &__list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    & > * {
+      font-family: Helvetica, sans-serif;
+      margin-top: 4px;
+      line-height: 19.2px;
+      font-size: 16px;
+      font-weight: 400;
+      word-wrap: break-word;
+      text-align: center;
+
+      @media (min-width: $md) {
+        text-align: left;
+      }
+    }
+  }
+}
