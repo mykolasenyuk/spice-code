@@ -29,7 +29,6 @@ const AboutUs = () => {
       <Background bgColor={bgColor}>
         <BluredBack>{isHeaderListOpen ? '' : <About />}</BluredBack>
       </Background>
-      <Footer isHeaderListOpen={isHeaderListOpen} />
     </div>
   )
 }

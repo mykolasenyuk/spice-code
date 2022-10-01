@@ -8,20 +8,21 @@ const About = () => {
     <div className={s.container}>
       <div className={s.leftSide}>
         <h1 className={s.title}>About Us</h1>
-        <div>
-          <p>
+        <div className={s.aboutUsDescr}>
+          <p className={s.descpiption}>
             Mendee.Digital is a web development studio with a social impact.
           </p>
-          We are an international community who believe that the internet should
-          be a place where everyone can contribute and be valued for their
-          talents and skills, regardless of their location or circumstances.
-        </div>
-        <div>
-          <p>
+          <p className={s.descpiption}>
+            We are an international community who believe that the internet
+            should be a place where everyone can contribute and be valued for
+            their talents and skills, regardless of their location or
+            circumstances.
+          </p>
+          <p className={s.descpiption}>
             We've got amazing people from the UK, Poland, Ukraine, Turkey and
             Mongolia right now, but we're always looking for more!
           </p>
-          <p>
+          <p className={s.descpiption}>
             If you would like to work with us on our mission to bring more
             fairness and opportunity online, please get in touch!
           </p>
@@ -29,14 +30,16 @@ const About = () => {
       </div>
 
       <div className={s.rightSide}>
-        <Image
-          className={s.image}
-          // layout="responsive"
-          width={500}
-          height={500}
-          src={globe}
-          alt="about us picture"
-        />
+        <div className={s.imageContainer}>
+          <Image
+            className={s.image}
+            // layout="responsive"
+            width={500}
+            height={500}
+            src={globe}
+            alt="about us picture"
+          />
+        </div>
       </div>
     </div>
   )
