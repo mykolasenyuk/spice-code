@@ -1,28 +1,35 @@
-import React, { FC } from 'react'
+import React from 'react'
+import { useSelector } from 'react-redux'
 import en from '../../../public/languages/en'
+import { useDeviceWidth } from '../../hooks/useDeviceWidth'
+import { RootState } from '../../redux/store'
 import styles from './styles.module.scss'
 
-interface Props {
-  isHeaderListOpen: boolean
-}
+const Footer = () => {
+  const {
+    headerList: { isHeaderListOpen },
+    darkMode: { isDarkModeEnabled },
+  } = useSelector((state: RootState) => state)
+  const { isSmallDevice } = useDeviceWidth()
 
-const Footer: FC<Props> = ({ isHeaderListOpen }) => {
-  const darkMode = false
-  const colorByDarkMode = darkMode ? '#fff' : '#202124'
-  const borderColorByDarkMode = `0.5px solid ${colorByDarkMode}`
+  const colorByDarkMode = isDarkModeEnabled ? '#fff' : '#202124'
+  const borderColorByDarkMode = (px: number = 0.5) => `${px}px solid ${colorByDarkMode}`
 
   return (
     <footer
       style={{
         color: colorByDarkMode,
-        borderTop: borderColorByDarkMode,
+        borderTop: borderColorByDarkMode(),
         transform: `translateY(${isHeaderListOpen ? '100%' : 0})`,
       }}
       className={styles.footer}>
       <div className={styles.footer__content}>
         <div className={`${styles.footer__block} ${styles.footer__info}`}>{en.footerBigText}</div>
         <div
-          style={{ borderRight: borderColorByDarkMode, borderLeft: borderColorByDarkMode }}
+          style={{
+            borderRight: borderColorByDarkMode(),
+            borderLeft: borderColorByDarkMode(isSmallDevice ? 0 : undefined),
+          }}
           className={`${styles.footer__block} ${styles.footer__social}`}>
           <h6 className={styles.footer__title}>{en.socialMedia}</h6>
           <ul className={styles.footer__list}>

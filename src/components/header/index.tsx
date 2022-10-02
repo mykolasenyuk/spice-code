@@ -1,30 +1,21 @@
 import { HeaderList } from '../headerList'
 import LogoSvg from '../../../public/icons/logo'
 import styles from './styles.module.scss'
-import { Dispatch, FC, SetStateAction } from 'react'
+import { useSelector } from 'react-redux'
+import { RootState } from '../../redux/store'
 
-interface Props {
-  isHeaderListOpen: boolean
-  setIsHeaderListOpen: Dispatch<SetStateAction<boolean>>
-}
-
-const Header: FC<Props> = ({ isHeaderListOpen, setIsHeaderListOpen }) => {
-  const isDarkMode = false
+const Header = () => {
+  const { isDarkModeEnabled } = useSelector((state: RootState) => state.darkMode)
 
   return (
     <div
-      style={{ backgroundColor: isDarkMode ? '#202124' : '' }}
-      className={styles.header}
-    >
+      style={{ backgroundColor: isDarkModeEnabled ? '#202124' : 'transparent' }}
+      className={styles.header}>
       <LogoSvg
         svgTag={{ style: { cursor: 'pointer' } }}
-        pathTag={isDarkMode ? { fill: '#fff' } : {}}
+        pathTag={isDarkModeEnabled ? { fill: '#fff' } : {}}
       />
-      <HeaderList
-        isDarkMode={isDarkMode}
-        isHeaderListOpen={isHeaderListOpen}
-        setIsHeaderListOpen={setIsHeaderListOpen}
-      />
+      <HeaderList />
     </div>
   )
 }
