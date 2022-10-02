@@ -19,7 +19,7 @@
     width: 100%;
     margin-bottom: 0;
     margin-top: 0;
-    transition: 200ms;
+    transition: $default-transition;
     list-style-type: none;
 
     @media (min-width: $md) {
@@ -37,7 +37,7 @@
       font-weight: 700;
       line-height: 57.6px;
       text-align: center !important;
-      transition: 200ms;
+      transition: $default-transition;
       color: #202124;
 
       @media (min-width: $md) {
@@ -64,7 +64,7 @@
 
   &__btn {
     cursor: pointer;
-    transition: 200ms;
+    transition: $default-transition;
     display: flex;
     justify-content: center;
     align-items: flex-end;
