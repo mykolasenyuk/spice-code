@@ -8,9 +8,7 @@ const Header = () => {
   const { isDarkModeEnabled } = useSelector((state: RootState) => state.darkMode)
 
   return (
-    <div
-      style={{ backgroundColor: isDarkModeEnabled ? '#202124' : 'transparent' }}
-      className={styles.header}>
+    <div className={styles.header}>
       <LogoSvg
         svgTag={{ style: { cursor: 'pointer' } }}
         pathTag={isDarkModeEnabled ? { fill: '#fff' } : {}}

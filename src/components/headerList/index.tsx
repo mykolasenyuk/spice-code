@@ -1,4 +1,4 @@
-import { CSSProperties, memo, useEffect, useState } from 'react'
+import { CSSProperties } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import OpenSvg from '../../../public/icons/open'
 import { menuList } from '../../data'

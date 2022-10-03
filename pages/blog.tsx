@@ -4,7 +4,10 @@ import PageWrapper from '../src/components/pageWrapper'
 const Blog = () => {
   return (
     <PageWrapper>
-      <div>start blog page</div>
+      <div style={{ display: 'flex', justifyContent: 'space-evenly' }}>
+        <div>hello</div>
+        <div>world</div>
+      </div>
     </PageWrapper>
   )
 }

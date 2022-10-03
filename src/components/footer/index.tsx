@@ -9,7 +9,7 @@ const Footer = () => {
   const {
     headerList: { isHeaderListOpen },
     darkMode: { isDarkModeEnabled },
-  } = useSelector((state: RootState) => state)
+  } = useSelector(state => state as RootState)
   const { isSmallDevice } = useDeviceWidth()
 
   const colorByDarkMode = isDarkModeEnabled ? '#fff' : '#202124'

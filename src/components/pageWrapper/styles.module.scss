@@ -3,4 +3,17 @@
   height: 100vh;
   flex-direction: column;
   justify-content: space-between;
+
+  &_small-menu-open {
+    overflow: hidden;
+  }
+
+  &__content {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    min-height: 100vh;
+  }
 }
