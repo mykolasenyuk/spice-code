@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import type { NextPage } from 'next'
 import { Header } from '../src/components/header'
 import { Footer } from '../src/components/footer'
@@ -7,10 +7,19 @@ import Background from '../src/components/background'
 import { About } from '../src/components/aboutUs'
 import { BluredBack } from '../src/components/bluredBackground'
 
+import { useDispatch, useSelector } from 'react-redux'
+import { changeDarkModeStatus } from '../src/redux/darkModeSlice'
+
 const AboutUs = () => {
   const [isHeaderListOpen, setIsHeaderListOpen] = useState<boolean>(false)
   const [bgColor, setBgColor] = useState<'normal' | 'dark'>('dark')
   const isDarkMode = true
+  const dispatch = useDispatch()
+
+  useEffect(() => {
+    const darkMode = true
+    dispatch(changeDarkModeStatus(darkMode))
+  }, [dispatch])
 
   return (
     <div
@@ -21,12 +30,9 @@ const AboutUs = () => {
         justifyContent: 'space-between',
       }}
     >
-      <Header
-        isHeaderListOpen={isHeaderListOpen}
-        setIsHeaderListOpen={setIsHeaderListOpen}
-      />
+      <Header />
 
-      <Background bgColor={bgColor}>
+      <Background>
         <BluredBack>{isHeaderListOpen ? '' : <About />}</BluredBack>
       </Background>
     </div>
