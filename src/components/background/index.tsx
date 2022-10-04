@@ -10,17 +10,9 @@ interface Props {
 }
 
 const Background: FC<Props> = ({ children }) => {
-  const { isDarkModeEnabled } = useSelector((state: RootState) => state.darkMode)
-
-  // const testColor = () => {
-  //   if (bgColor === 'normal') {
-  //     return s.circles
-  //   }
-  //   if (bgColor === 'dark') {
-  //     return s.circlesDark
-  //   }
-  //   return s.circlesLight
-  // }
+  const { isDarkModeEnabled } = useSelector(
+    (state: RootState) => state.darkMode,
+  )
 
   return (
     <>
