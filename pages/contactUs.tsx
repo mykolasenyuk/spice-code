@@ -1,19 +1,30 @@
 import type { NextPage } from 'next'
-import { useState } from 'react'
-import { useSelector } from 'react-redux'
+import { useEffect, useState } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
 import { RootState } from '../src/redux/store'
 import PageWrapper from '../src/components/pageWrapper'
 import Contacts from '../src/components/contactUS'
+import { BluredBack } from '../src/components/bluredBackground'
+import { changeDarkModeStatus } from '../src/redux/darkModeSlice'
+import { useLocation } from 'react-router-dom'
 
 const ContactUs: NextPage = () => {
   const { isHeaderListOpen } = useSelector(
     (state: RootState) => state.headerList,
   )
-  const [bgColor, setBgColor] = useState<'normal' | 'dark'>('normal')
+
+  const darkMode = true
+  const dispatch = useDispatch()
+
+  useEffect(() => {
+    dispatch(changeDarkModeStatus(darkMode))
+  }, [dispatch])
 
   return (
     <PageWrapper>
-      <Contacts />
+      <BluredBack>
+        <Contacts />
+      </BluredBack>
     </PageWrapper>
   )
 }

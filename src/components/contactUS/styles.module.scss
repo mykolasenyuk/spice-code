@@ -12,4 +12,70 @@
 .contactsWrapper {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+  color: #ffffff;
+  padding-left: 168px;
+  padding-right: 168px;
+}
+.contactsTitle {
+  font-family: Gilroy, sans-serif;
+  text-transform: lowercase;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.linkWrapper {
+  margin-top: 20px;
+}
+.socialLink {
+  text-transform: lowercase;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+.socialInput {
+  margin-top: 17px;
+}
+
+.inputForm {
+  position: relative;
+}
+
+.input {
+  font-size: 20px;
+  color: #fff;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #ffffff;
+  width: 280px;
+  padding-right: 25px;
+  transition: 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+  &::placeholder {
+    color: #ffffff;
+  }
+  &:hover {
+    border-bottom: 2px solid #ffa837;
+  }
+
+  &:focus {
+    border-bottom: 2px solid #ffa837;
+  }
+}
+.inputBtn {
+  position: absolute;
+  top: 10%;
+  width: 20px;
+  height: 20px;
+  right: 0;
+  cursor: pointer;
+  fill: #ffffff;
+  &:hover,
+  :focus {
+    fill: #ffa837;
+  }
 }
