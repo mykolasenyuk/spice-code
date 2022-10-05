@@ -5,7 +5,7 @@ export interface DarkModeState {
   isDarkModeEnabled: boolean
 }
 
-const darkMode = false
+const darkMode = true
 
 const initialState: DarkModeState = {
   isDarkModeEnabled: darkMode,

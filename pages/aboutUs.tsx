@@ -12,12 +12,10 @@ import { changeDarkModeStatus } from '../src/redux/darkModeSlice'
 
 const AboutUs = () => {
   const [isHeaderListOpen, setIsHeaderListOpen] = useState<boolean>(false)
-  const [bgColor, setBgColor] = useState<'normal' | 'dark'>('dark')
-  const isDarkMode = true
+  const darkMode = true
   const dispatch = useDispatch()
 
   useEffect(() => {
-    const darkMode = true
     dispatch(changeDarkModeStatus(darkMode))
   }, [dispatch])
 
