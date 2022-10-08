@@ -31,7 +31,6 @@ const About = () => {
           <div className={s.imageContainer}>
             <Image
               className={s.image}
-              // layout="responsive"
               width={500}
               height={500}
               src={globe}

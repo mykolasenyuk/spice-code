@@ -4,11 +4,7 @@
   @media screen and (min-width: $md) {
     display: flex;
     justify-content: center;
-    // position: absolute;
     align-items: center;
-    // top: 0;
-    // left: 0;
-    // z-index: 999;
     width: 100vw;
     height: 100%;
   }
@@ -37,8 +33,6 @@
   color: #ffffff;
   max-width: 1070px;
   z-index: 10;
-  // padding-left: 168px;
-  // padding-right: 168px;
 }
 .title {
   @media screen and (min-width: $md) {
@@ -110,7 +104,7 @@
 
 .input {
   @media screen and (min-width: $md) {
-    width: 280px;
+    width: 250px;
     padding-right: 25px;
   }
   font-size: 20px;
