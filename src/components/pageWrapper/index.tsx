@@ -1,4 +1,4 @@
-import React, { FC, ReactNode, useCallback, useEffect, useMemo, useState } from 'react'
+import React, { FC, ReactNode, useEffect } from 'react'
 import { useSelector } from 'react-redux'
 import { useDeviceWidth } from '../../hooks/useDeviceWidth'
 import { RootState } from '../../redux/store'
@@ -12,7 +12,9 @@ interface Props {
 }
 
 const PageWrapper: FC<Props> = ({ children }) => {
-  const { isHeaderListOpen } = useSelector((state: RootState) => state.headerList)
+  const { isHeaderListOpen } = useSelector(
+    (state: RootState) => state.headerList
+  )
   const { isSmallDevice } = useDeviceWidth()
 
   const isShowChildren = () => {
@@ -35,7 +37,7 @@ const PageWrapper: FC<Props> = ({ children }) => {
     <div className={styles.wrapper}>
       <Header />
       <Background>
-        <div className={styles.wrapper__content}>{isShowChildren()}</div>
+        <div>{isShowChildren()}</div>
       </Background>
       <Footer />
     </div>

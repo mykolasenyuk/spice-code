@@ -64,14 +64,16 @@
 
   &__btn {
     cursor: pointer;
-    transition: $default-transition;
     display: flex;
     justify-content: center;
     align-items: flex-end;
     margin-top: 13px;
 
+    & > svg {
+      transition: $default-transition;
+    }
+
     &_close {
-      align-items: center;
       transform: rotate(45deg);
     }
   }

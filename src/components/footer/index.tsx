@@ -13,7 +13,8 @@ const Footer = () => {
   const { isSmallDevice } = useDeviceWidth()
 
   const colorByDarkMode = isDarkModeEnabled ? '#fff' : '#202124'
-  const borderColorByDarkMode = (px: number = 0.5) => `${px}px solid ${colorByDarkMode}`
+  const borderColorByDarkMode = (px: number = 0.5) =>
+    `${px}px solid ${colorByDarkMode}`
 
   return (
     <footer
@@ -24,7 +25,9 @@ const Footer = () => {
       }}
       className={styles.footer}>
       <div className={styles.footer__content}>
-        <div className={`${styles.footer__block} ${styles.footer__info}`}>{en.footerBigText}</div>
+        <div className={`${styles.footer__block} ${styles.footer__info}`}>
+          {en.footerBigText}
+        </div>
         <div
           style={{
             borderRight: borderColorByDarkMode(),
