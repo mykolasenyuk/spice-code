@@ -11,7 +11,6 @@ export const menuList = [
   { text: en.blog, id: uuid() },
 ]
 
-
 export const serviceList = [
   { text: en.websiteDesignAndCode, id: uuid() },
   { text: en.websiteAudit, id: uuid() },
@@ -20,6 +19,7 @@ export const serviceList = [
   { text: en.solanaWithRUSTProgrammingLanguage, id: uuid() },
   { text: en.graphicDesign, id: uuid() },
   { text: en.motionGraphics, id: uuid() },
+]
 
 export const cardList = [
   {
