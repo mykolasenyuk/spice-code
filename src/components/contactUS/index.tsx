@@ -1,14 +1,11 @@
-import { FC } from 'react'
+
 import s from './styles.module.scss'
 
-// interface Props {
-//   bgColor: 'normal' | 'dark'
-//   isHeaderListOpen: boolean
-// }
+
 const Contacts = () => {
   return (
     <div className={s.container}>
-      {/* <h1>Contact us</h1> */}
+      <h1 className={s.title}>Contact</h1>
       <ul className={s.contactsWrapper}>
         <li>
           <h3 className={s.contactsTitle}>
