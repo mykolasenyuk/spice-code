@@ -1,6 +1,6 @@
-
+import Image from 'next/image'
 import s from './styles.module.scss'
-
+import cubes from '../../../public/images/3d rectangles cube.png'
 
 const Contacts = () => {
   return (
@@ -43,6 +43,16 @@ const Contacts = () => {
           </ul>
         </li>
       </ul>
+      <div className={s.imageContainer}>
+        <Image
+          className={s.image}
+          // layout="responsive"
+          // width={300}
+          // height={300}
+          src={cubes}
+          alt="cubes"
+        />
+      </div>
     </div>
   )
 }

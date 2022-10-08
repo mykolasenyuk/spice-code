@@ -22,14 +22,23 @@
 .contactsWrapper {
   @media screen and (min-width: $md) {
     width: 100%;
+    flex-direction: row;
   }
+  // @media screen and (max-width: 480px) {
+  //   display: flex;
+  //   flex-wrap: wrap;
+  //   flex-direction: column;
+  // }
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  flex-direction: column;
 
   color: #ffffff;
-  padding-left: 168px;
-  padding-right: 168px;
+  max-width: 1070px;
+  z-index: 10;
+  // padding-left: 168px;
+  // padding-right: 168px;
 }
 .title {
   @media screen and (min-width: $md) {
@@ -37,6 +46,7 @@
     margin: 0;
     height: 0;
   }
+
   z-index: 10;
   margin: 0;
   opacity: 1;
@@ -47,12 +57,14 @@
   font-weight: 600;
   line-height: 1.23;
   color: #ffffff;
+  margin-top: 108px;
   margin-bottom: 32px;
 }
 .contactsTitle {
   @media screen and (min-width: $md) {
     margin: 0;
     font-size: 28px;
+    text-align: start;
   }
   font-family: Gilroy, sans-serif;
   text-transform: lowercase;
@@ -138,4 +150,19 @@
   :focus {
     fill: #ffa837;
   }
+}
+
+.imageContainer {
+  @media screen and (min-width: $md) {
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    width: 300px;
+    height: 300px;
+  }
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  width: 175px;
+  height: 175px;
 }
