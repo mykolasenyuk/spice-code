@@ -7,6 +7,7 @@ const OurServices = () => {
   return (
     <div className={s.container}>
       <div className={s.serviceWrapper}>
+        <h1 className={s.title}>Services</h1>
         <div className={s.imageContainer}>
           <div className={s.imageWrapper}>
             <Image src={globe} alt="cubes" />
