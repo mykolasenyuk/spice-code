@@ -9,10 +9,10 @@ interface Props {
 const ModeInfo: FC<Props> = ({ children }) => {
   const dispatch = useDispatch()
 
-  useEffect(() => {
-    const darkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
-    dispatch(changeDarkModeStatus(darkMode))
-  }, [dispatch])
+  // useEffect(() => {
+  //   const darkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+  //   dispatch(changeDarkModeStatus(darkMode))
+  // }, [dispatch])
 
   return children
 }

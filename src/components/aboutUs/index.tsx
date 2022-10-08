@@ -27,18 +27,16 @@ const About = () => {
             fairness and opportunity online, please get in touch!
           </p>
         </div>
-      </div>
-
-      <div className={s.rightSide}>
-        <div className={s.imageContainer}>
-          <Image
-            className={s.image}
-            // layout="responsive"
-            width={500}
-            height={500}
-            src={globe}
-            alt="about us picture"
-          />
+        <div className={s.rightSide}>
+          <div className={s.imageContainer}>
+            <Image
+              className={s.image}
+              width={500}
+              height={500}
+              src={globe}
+              alt="about us picture"
+            />
+          </div>
         </div>
       </div>
     </div>
