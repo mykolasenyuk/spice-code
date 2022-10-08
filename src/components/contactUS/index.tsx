@@ -44,14 +44,7 @@ const Contacts = () => {
         </li>
       </ul>
       <div className={s.imageContainer}>
-        <Image
-          className={s.image}
-          // layout="responsive"
-          // width={300}
-          // height={300}
-          src={cubes}
-          alt="cubes"
-        />
+        <Image className={s.image} src={cubes} alt="cubes" />
       </div>
     </div>
   )
