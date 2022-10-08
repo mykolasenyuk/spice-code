@@ -1,14 +1,11 @@
-import { FC } from 'react'
+import Image from 'next/image'
 import s from './styles.module.scss'
+import cubes from '../../../public/images/3d rectangles cube.png'
 
-// interface Props {
-//   bgColor: 'normal' | 'dark'
-//   isHeaderListOpen: boolean
-// }
 const Contacts = () => {
   return (
     <div className={s.container}>
-      {/* <h1>Contact us</h1> */}
+      <h1 className={s.title}>Contact</h1>
       <ul className={s.contactsWrapper}>
         <li>
           <h3 className={s.contactsTitle}>
@@ -46,6 +43,16 @@ const Contacts = () => {
           </ul>
         </li>
       </ul>
+      <div className={s.imageContainer}>
+        <Image
+          className={s.image}
+          // layout="responsive"
+          // width={300}
+          // height={300}
+          src={cubes}
+          alt="cubes"
+        />
+      </div>
     </div>
   )
 }

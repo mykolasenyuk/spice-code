@@ -9,9 +9,9 @@ import { BluredBack } from '../src/components/bluredBackground'
 
 import { useDispatch, useSelector } from 'react-redux'
 import { changeDarkModeStatus } from '../src/redux/darkModeSlice'
+import PageWrapper from '../src/components/pageWrapper'
 
 const AboutUs = () => {
-  const [isHeaderListOpen, setIsHeaderListOpen] = useState<boolean>(false)
   const darkMode = true
   const dispatch = useDispatch()
 
@@ -20,20 +20,11 @@ const AboutUs = () => {
   }, [dispatch])
 
   return (
-    <div
-      style={{
-        display: 'flex',
-        height: '100vh',
-        flexDirection: 'column',
-        justifyContent: 'space-between',
-      }}
-    >
-      <Header />
-
-      <Background>
-        <BluredBack>{isHeaderListOpen ? '' : <About />}</BluredBack>
-      </Background>
-    </div>
+    <PageWrapper>
+      <BluredBack>
+        <About />
+      </BluredBack>
+    </PageWrapper>
   )
 }
 
