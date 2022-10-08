@@ -1,6 +1,7 @@
 .wrapper {
   display: flex;
-  height: 100vh;
+  min-height: 100vh;
+  height: 100%;
   flex-direction: column;
   justify-content: space-between;
 
@@ -15,5 +16,6 @@
     left: 0;
     width: 100vw;
     min-height: 100vh;
+    height: 100%;
   }
 }

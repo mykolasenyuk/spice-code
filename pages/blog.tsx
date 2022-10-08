@@ -1,15 +1,13 @@
-import React from 'react'
-import PageWrapper from '../src/components/pageWrapper'
+import React from "react";
+import PageWrapper from "../src/components/pageWrapper";
+import { BlogPage } from "../src/components/blogPage";
 
 const Blog = () => {
   return (
     <PageWrapper>
-      <div style={{ display: 'flex', justifyContent: 'space-evenly' }}>
-        <div>hello</div>
-        <div>world</div>
-      </div>
+      <BlogPage />
     </PageWrapper>
-  )
-}
+  );
+};
 
-export default Blog
+export default Blog;

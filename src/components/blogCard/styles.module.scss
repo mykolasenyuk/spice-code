@@ -1,0 +1,50 @@
+@import './src/styles/variables';
+
+.card {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $md) {
+    display: flex;
+    justify-content: space-between;
+    width: 316px;
+    padding: 15px;
+  }
+
+  @media (min-width: $xl) {
+    padding: 0;
+    height: 440px;
+  }
+
+  &__img {
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 9px;
+
+    @media (min-width: $md) {
+      height: 100%;
+    }
+  }
+
+  &__title {
+    font-family: Gilroy, sans-serif;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 30.4px;
+    margin: 16px 0 auto 0;
+
+    @media (min-width: $xl) {
+      font-size: 32px;
+      line-height: 38.4px;
+    }
+  }
+
+  &__btn {
+    margin: 17px 0 30px auto;
+    transition: $default-transition;
+
+    @media (min-width: $md) {
+      margin-bottom: 17px;
+    }
+  }
+}
