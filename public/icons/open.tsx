@@ -3,15 +3,17 @@ import { FC, memo, SVGProps } from 'react'
 interface Props {
   svgTag?: SVGProps<SVGSVGElement>
   lineTag?: SVGProps<SVGLineElement>
+  className?: string
 }
 
-const OpenSvg: FC<Props> = ({ svgTag, lineTag }) => (
+const OpenSvg: FC<Props> = ({ svgTag, lineTag, className }) => (
   <svg
     width='26'
     height='26'
     viewBox='0 0 26 26'
     fill='none'
     xmlns='http://www.w3.org/2000/svg'
+    className={className}
     {...svgTag}>
     <line
       x1='13.5'

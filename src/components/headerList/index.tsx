@@ -16,14 +16,15 @@ const HeaderList = () => {
   const { isSmallDevice } = useDeviceWidth()
 
   const listItemStyle = (i: number) => {
-    const listItemCursorStyle: CSSProperties = { cursor: !isHeaderListOpen ? 'default' : 'pointer' }
+    const listItemCursorStyle: CSSProperties = {
+      cursor: !isHeaderListOpen ? 'default' : 'pointer',
+    }
+    const marginRightStyle = isHeaderListOpen && !isSmallDevice ? '32px' : 0
 
-    return menuList.length - 1 === i
-      ? {
-          marginRight: isHeaderListOpen && !isSmallDevice ? '32px' : 0,
-          ...listItemCursorStyle,
-        }
-      : listItemCursorStyle
+    return {
+      marginRight: menuList.length - 1 === i ? marginRightStyle : 'inherit',
+      ...listItemCursorStyle,
+    }
   }
 
   return (
@@ -32,7 +33,10 @@ const HeaderList = () => {
         isDarkModeEnabled ? styles['header__content_dark-mode'] : ''
       }`}>
       <ul
-        style={{ gap: `${isHeaderListOpen ? 32 : 5}px`, opacity: isHeaderListOpen ? 1 : 0 }}
+        style={{
+          gap: `${isHeaderListOpen ? 32 : 5}px`,
+          opacity: isHeaderListOpen ? 1 : 0,
+        }}
         className={styles.header__list}>
         {menuList.map((item, i) => (
           <li
@@ -47,8 +51,11 @@ const HeaderList = () => {
       </ul>
       <div
         onClick={() => dispatch(changeHeaderListStatus())}
-        className={`${styles.header__btn} ${isHeaderListOpen ? styles.header__btn_close : ''}`}>
-        <OpenSvg lineTag={isDarkModeEnabled ? { stroke: 'white' } : {}} />
+        className={styles.header__btn}>
+        <OpenSvg
+          className={isHeaderListOpen ? styles.header__btn_close : ''}
+          lineTag={isDarkModeEnabled ? { stroke: 'white' } : {}}
+        />
       </div>
     </div>
   )

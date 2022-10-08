@@ -5,12 +5,31 @@ interface Props {
   width?: number
   height?: number
   onClick?: MouseEventHandler<SVGSVGElement>
+  onHover?: MouseEventHandler<SVGSVGElement>
+  onLeave?: MouseEventHandler<SVGSVGElement>
   fill?: string
+  className?: string
 }
 
-const Sprite: FC<Props> = ({ id, width, height, onClick = () => {}, fill }) => {
+const Sprite: FC<Props> = ({
+  id,
+  width,
+  height,
+  onClick = () => {},
+  onHover = () => {},
+  onLeave = () => {},
+  fill,
+  className,
+}) => {
   return (
-    <svg width={`${width}px`} height={`${height}px`} onClick={onClick} fill={fill}>
+    <svg
+      className={className}
+      width={`${width}px`}
+      height={`${height}px`}
+      onClick={onClick}
+      onMouseEnter={onHover}
+      onMouseLeave={onLeave}
+      fill={fill}>
       <use href={`/sprite.svg#${id}`} />
     </svg>
   )
