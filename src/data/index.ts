@@ -13,12 +13,12 @@ export const menuList = [
 
 export const serviceList = [
   { text: en.websiteDesignAndCode, id: uuid() },
-  { text: en.websiteAudit, id: uuid() },
-  { text: en.brandingAndVisualIdentity, id: uuid() },
   { text: en.NFTAndBlockchainDevelopment, id: uuid() },
-  { text: en.solanaWithRUSTProgrammingLanguage, id: uuid() },
+  { text: en.brandingAndVisualIdentity, id: uuid() },
+  { text: en.websiteAudit, id: uuid() },
   { text: en.graphicDesign, id: uuid() },
   { text: en.motionGraphics, id: uuid() },
+  { text: en.solanaWithRUSTProgrammingLanguage, id: uuid() },
 ]
 
 export const cardList = [
