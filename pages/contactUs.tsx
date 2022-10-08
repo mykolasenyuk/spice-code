@@ -6,7 +6,7 @@ import PageWrapper from '../src/components/pageWrapper'
 import Contacts from '../src/components/contactUS'
 import { BluredBack } from '../src/components/bluredBackground'
 import { changeDarkModeStatus } from '../src/redux/darkModeSlice'
-import { useLocation } from 'react-router-dom'
+// import { useLocation } from 'react-router-dom'
 
 const ContactUs: NextPage = () => {
   const { isHeaderListOpen } = useSelector(

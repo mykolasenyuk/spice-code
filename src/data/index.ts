@@ -12,13 +12,37 @@ export const menuList = [
 ]
 
 export const serviceList = [
-  { text: en.websiteDesignAndCode, id: uuid() },
-  { text: en.NFTAndBlockchainDevelopment, id: uuid() },
-  { text: en.brandingAndVisualIdentity, id: uuid() },
-  { text: en.websiteAudit, id: uuid() },
-  { text: en.graphicDesign, id: uuid() },
-  { text: en.motionGraphics, id: uuid() },
-  { text: en.solanaWithRUSTProgrammingLanguage, id: uuid() },
+  {
+    text: en.websiteDesignAndCode,
+    id: uuid(),
+    decrs: en.Welovegooddesignandcode,
+  },
+  {
+    text: en.NFTAndBlockchainDevelopment,
+    id: uuid(),
+    decrs: en.NFTandBlockchainDevelopment,
+  },
+  {
+    text: en.brandingAndVisualIdentity,
+    id: uuid(),
+    decrs: en.LogoscoloursTOVbrandguidelines,
+  },
+  {
+    text: en.websiteAudit,
+    id: uuid(),
+    decrs: en.Wewilllocateyourproblemsandfindsolutions,
+  },
+  { text: en.graphicDesign, id: uuid(), decrs: en.Fromprinttoallthingsdigital },
+  {
+    text: en.motionGraphics,
+    id: uuid(),
+    decrs: en.Ifastaticisworthathousandwords,
+  },
+  {
+    text: en.solanaWithRUSTProgrammingLanguage,
+    id: uuid(),
+    decrs: en.solanaWithRUSTProgrammingLanguage,
+  },
 ]
 
 export const cardList = [
