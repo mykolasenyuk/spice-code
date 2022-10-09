@@ -14,22 +14,16 @@ const Background: FC<Props> = ({ children }) => {
     (state: RootState) => state.darkMode,
   )
 
+  const num = 12
+  const arr = Array.from(Array(num).keys())
+
   return (
     <>
       <div className={s.area}>
         <ul className={isDarkModeEnabled ? s.circlesDark : s.circles}>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
+          {arr.map((el) => (
+            <li key={el}></li>
+          ))}
         </ul>
       </div>
       <div className={s.container}>{children}</div>
