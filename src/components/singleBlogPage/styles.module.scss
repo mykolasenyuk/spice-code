@@ -1,12 +1,35 @@
+@import '../../styles/variables';
+
 .single-blog {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  text-align: center;
-  max-width: 671px;
+  max-width: 1040px;
   margin: 0 auto;
   color: #fff;
-  padding: 37.5px 20px;
+  position: relative;
+
+  &__container {
+    display: flex;
+    margin: 0 auto;
+    max-width: 671px;
+    gap: 24px;
+    flex-direction: column;
+    text-align: center;
+    padding: 37.5px 20px;
+  }
+
+  &__go-back {
+    position: absolute;
+    left: 0;
+    top: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #393c4e;
+    width: 44.26px;
+    height: 44.26px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0 20px;
+  }
 
   &__img {
     display: flex;
@@ -24,6 +47,23 @@
     font-weight: 500;
     font-size: 48px;
     line-height: 58px;
+
+    &_phone {
+      display: block;
+      margin: 0 40px;
+
+      @media (min-width: $xl) {
+        display: none;
+      }
+    }
+
+    &_laptop {
+      display: none;
+
+      @media (min-width: $xl) {
+        display: block;
+      }
+    }
   }
 
   &__description {

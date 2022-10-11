@@ -1,4 +1,4 @@
-import React, { FC, ReactNode, useEffect } from 'react'
+import React, { FC, ReactNode, useEffect, useState } from 'react'
 import { useSelector } from 'react-redux'
 import { useDeviceWidth } from '../../hooks/useDeviceWidth'
 import { RootState } from '../../redux/store'
@@ -12,6 +12,7 @@ interface Props {
 }
 
 const PageWrapper: FC<Props> = ({ children }) => {
+  const [blur, setBlur] = useState<boolean>(false)
   const { isHeaderListOpen } = useSelector(
     (state: RootState) => state.headerList
   )
@@ -25,6 +26,10 @@ const PageWrapper: FC<Props> = ({ children }) => {
   }
 
   useEffect(() => {
+    setBlur(!(window.location.pathname === '/'))
+  }, [])
+
+  useEffect(() => {
     const body = document.querySelector('body')
     if (isHeaderListOpen && isSmallDevice) {
       body.classList.add(styles['wrapper_small-menu-open'])
@@ -34,13 +39,16 @@ const PageWrapper: FC<Props> = ({ children }) => {
   }, [isHeaderListOpen, isSmallDevice])
 
   return (
-    <div className={styles.wrapper}>
-      <Header />
-      <Background>
-        <div>{isShowChildren()}</div>
-      </Background>
-      <Footer />
-    </div>
+    <>
+      <div className={blur ? styles.wrapper__blur : ''}></div>
+      <div className={styles.wrapper}>
+        <Header />
+        <Background>
+          <div>{isShowChildren()}</div>
+        </Background>
+        <Footer />
+      </div>
+    </>
   )
 }
 

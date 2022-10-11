@@ -1,4 +1,4 @@
-.bluredBackgroung {
+.bluredBackground {
   top: 0;
   left: 0;
   position: absolute;
@@ -7,5 +7,4 @@
   width: 100vw;
   backdrop-filter: blur(80px);
   z-index: 30;
-  overflow-x: hidden;
 }
