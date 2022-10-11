@@ -5,6 +5,16 @@
   flex-direction: column;
   justify-content: space-between;
 
+  &__blur{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    min-height: 100%;
+    backdrop-filter: blur(80px);
+  }
+
   &_small-menu-open {
     overflow: hidden;
   }
