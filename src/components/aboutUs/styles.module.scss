@@ -122,6 +122,11 @@
   left: 48%;
   // width: 100%;
   width: 315px;
+  @media screen and (min-width: 640px) and (max-width: 768px) {
+    position: absolute;
+    // top: 50%;
+    left: 68%;
+  }
 
   @media screen and (min-width: $md) {
     top: 20%;
