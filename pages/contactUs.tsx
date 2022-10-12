@@ -10,7 +10,7 @@ import { changeDarkModeStatus } from '../src/redux/darkModeSlice'
 
 const ContactUs: NextPage = () => {
   const { isHeaderListOpen } = useSelector(
-    (state: RootState) => state.headerList,
+    (state: RootState) => state.headerList
   )
 
   const darkMode = true
@@ -22,9 +22,7 @@ const ContactUs: NextPage = () => {
 
   return (
     <PageWrapper>
-      <BluredBack>
-        <Contacts />
-      </BluredBack>
+      <Contacts />
     </PageWrapper>
   )
 }
