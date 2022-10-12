@@ -34,7 +34,7 @@ const About = () => {
               width={500}
               height={500}
               src={globe}
-              alt="about us picture"
+              alt='about us picture'
             />
           </div>
         </div>

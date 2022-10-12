@@ -17,7 +17,7 @@ const OurServices = ({ children }) => {
 
   const darkMode = false
   const dispatch = useDispatch()
-  const openModal = (descr) => {
+  const openModal = descr => {
     setModalIsOpen(true)
     setDescription(descr)
     dispatch(changeDarkModeStatus(darkMode))
@@ -33,11 +33,11 @@ const OurServices = ({ children }) => {
         <h1 className={s.title}>Services</h1>
         <div className={s.imageContainer}>
           <div className={s.imageWrapper}>
-            <Image src={globe} alt="cubes" />
+            <Image src={globe} alt='cubes' />
           </div>
         </div>
         <ul className={s.servicesList}>
-          {serviceList.map((item) => (
+          {serviceList.map(item => (
             <li
               key={item.id}
               className={s.servicesLink}

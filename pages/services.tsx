@@ -18,9 +18,7 @@ const AboutUs = () => {
 
   return (
     <PageWrapper>
-      <BluredBack>
-        <OurServices />
-      </BluredBack>
+      <OurServices />
     </PageWrapper>
   )
 }
