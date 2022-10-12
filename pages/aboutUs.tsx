@@ -21,9 +21,7 @@ const AboutUs = () => {
 
   return (
     <PageWrapper>
-      <BluredBack>
-        <About />
-      </BluredBack>
+      <About />
     </PageWrapper>
   )
 }
