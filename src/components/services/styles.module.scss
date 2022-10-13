@@ -99,9 +99,12 @@
 }
 
 .servicesLink {
+  z-index: 55;
   cursor: pointer;
+  transition: all 150ms ease-out 110ms;
   &:hover {
     color: #ffa837;
+    // transform: scale(1.1);
   }
 }
 
@@ -157,6 +160,7 @@
 
 .imageWrapper {
   position: absolute;
+  animation: slide-in-blurred-left 0.9s cubic-bezier(0.23, 1, 0.32, 1) both;
 
   top: 33%;
   right: -55%;
@@ -177,5 +181,26 @@
     position: absolute;
     // top: 50%;
     left: 60%;
+  }
+}
+
+@keyframes slide-in-blurred-left {
+  0% {
+    -webkit-transform: translateX(-1000px) scaleX(2.5) scaleY(0.2);
+    transform: translateX(-1000px) scaleX(2.5) scaleY(0.2);
+    -webkit-transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
+    -webkit-filter: blur(40px);
+    filter: blur(40px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0) scaleY(1) scaleX(1);
+    transform: translateX(0) scaleY(1) scaleX(1);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
   }
 }

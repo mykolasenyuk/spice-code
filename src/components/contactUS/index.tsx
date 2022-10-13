@@ -16,8 +16,8 @@ const Contacts = () => {
             <form className={s.inputForm}>
               <input
                 className={s.input}
-                type="email"
-                placeholder="hello@mendee.digital"
+                type='email'
+                placeholder='hello@mendee.digital'
               />
 
               <div>
@@ -31,20 +31,42 @@ const Contacts = () => {
         <li>
           <h3 className={s.contactsTitle}> Social Media</h3>
           <ul className={s.linkWrapper}>
-            <li className={s.socialLink}>linkedin</li>
-            <li className={s.socialLink}>instagram</li>
+            <li className={s.socialLink}>
+              <a
+                className={s.socialLink}
+                href='https://www.linkedin.com/company/mendee/'
+              >
+                linkedin
+              </a>
+            </li>
+            <li className={s.socialLink}>
+              <a
+                className={s.socialLink}
+                href='https://www.instagram.com/mendee_digital/'
+              >
+                instagram
+              </a>
+            </li>
           </ul>
         </li>
         <li>
           <h3 className={s.contactsTitle}>Get a quote</h3>
           <ul className={s.linkWrapper}>
-            <li className={s.socialLink}>Hello@mendee.digital</li>
-            <li className={s.socialLink}>+44(0)77777777</li>
+            <li className={s.socialLink}>
+              <a className={s.socialLink} href='mailto:hello@mendee.digital'>
+                Hello@mendee.digital
+              </a>
+            </li>
+            <li className={s.socialLink}>
+              <a className={s.socialLink} href='tel:+44(0)77777777'>
+                +44(0)77777777
+              </a>
+            </li>
           </ul>
         </li>
       </ul>
       <div className={s.imageContainer}>
-        <Image className={s.image} src={cubes} alt="cubes" />
+        <Image className={s.image} src={cubes} alt='cubes' />
       </div>
     </div>
   )
