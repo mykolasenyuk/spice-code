@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { CSSProperties, FC, forwardRef, memo, ReactNode } from 'react'
+import { CSSProperties, FC, memo, ReactNode } from 'react'
 import { Url } from 'url'
 
 interface Props {

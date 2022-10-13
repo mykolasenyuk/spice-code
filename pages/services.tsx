@@ -1,12 +1,10 @@
-import { useEffect, useState } from 'react'
-import Background from '../src/components/background'
-import { About } from '../src/components/aboutUs'
+import { useEffect } from 'react'
 import { BluredBack } from '../src/components/bluredBackground'
 
-import { useDispatch, useSelector } from 'react-redux'
-import { changeDarkModeStatus } from '../src/redux/darkModeSlice'
+import { useDispatch } from 'react-redux'
 import PageWrapper from '../src/components/pageWrapper'
 import OurServices from '../src/components/services'
+import { changeDarkModeStatus } from '../src/redux/darkModeSlice'
 
 const AboutUs = () => {
   const darkMode = true

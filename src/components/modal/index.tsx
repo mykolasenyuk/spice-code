@@ -1,10 +1,8 @@
-import React, { FC, ReactNode, useState } from 'react'
-import { useEffect } from 'react'
-// import { createPortal } from 'react-dom'
+import { FC, ReactNode, useEffect } from 'react'
 import ReactDOM from 'react-dom'
-import classes from './styles.module.scss'
 import Background from '../background'
 import { BluredBack } from '../bluredBackground'
+import classes from './styles.module.scss'
 
 interface Props {
   description: string

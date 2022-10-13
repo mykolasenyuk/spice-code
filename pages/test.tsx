@@ -11,7 +11,8 @@ const Test = () => {
           width: '100vw',
           height: '100px',
           backgroundColor: 'red',
-        }}></div>
+        }}
+      />
       test Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem
       asperiores unde modi corrupti. Aspernatur fugiat maiores, vel atque cumque
       quo ab libero odio voluptatem quos recusandae quaerat fugit. Sequi,

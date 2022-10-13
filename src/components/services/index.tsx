@@ -1,14 +1,14 @@
 import Image from 'next/image'
-import classes from './styles.module.scss'
+import { FC, ReactNode, useState } from 'react'
+import { useDispatch } from 'react-redux'
 import globe from '../../../public/images/globe1.png'
 import { serviceList } from '../../data'
-import { FC, ReactNode, useEffect, useState } from 'react'
-import Modal from '../modal'
-import { useDispatch } from 'react-redux'
 import { changeDarkModeStatus } from '../../redux/darkModeSlice'
+import Modal from '../modal'
+import classes from './styles.module.scss'
 
 interface Props {
-  children: ReactNode
+  children?: ReactNode
 }
 
 const OurServices: FC<Props> = ({ children }) => {
