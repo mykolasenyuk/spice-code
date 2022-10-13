@@ -1,13 +1,18 @@
 import { FC, memo, SVGProps } from 'react'
 
-interface Props {
+export interface Props {
   svgTag?: SVGProps<SVGSVGElement>
   pathTag?: SVGProps<SVGPathElement>
 }
 
 const LogoSvg: FC<Props> = ({ svgTag, pathTag }) => {
   return (
-    <svg width={122} height={36} fill='none' xmlns='http://www.w3.org/2000/svg' {...svgTag}>
+    <svg
+      width={122}
+      height={36}
+      fill='none'
+      xmlns='http://www.w3.org/2000/svg'
+      {...svgTag}>
       <path
         d='M12.063 0h2.874v8.068l5.678-5.705 2.033 2.043-5.677 5.705H25V13H2v-2.889h8.03L4.351 4.406l2.033-2.043 5.678 5.705V0Z'
         fill='#FFA837'

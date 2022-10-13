@@ -5,6 +5,8 @@
   text-align: center;
   margin: auto;
   padding: 0 25px;
+  height: 100%;
+  flex: 1;
 }
 
 .socialList {
@@ -19,14 +21,15 @@
   margin: 0;
   text-transform: lowercase;
 
-  margin-top: 80px;
   @media screen and (max-width: 961px) {
     font-size: 48px;
   }
+
   @media screen and (max-width: 961px) {
     font-size: 36px;
   }
 }
+
 .title1 span {
   color: #ffa737;
 }
@@ -42,7 +45,6 @@
 }
 
 .titleDark {
-  // text-transform: uppercase;
   color: #ffa737;
   margin-top: 80px;
   @media screen and (max-width: 961px) {

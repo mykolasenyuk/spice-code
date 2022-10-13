@@ -5,10 +5,10 @@ import ballImg from '../../public/images/homeless.webp'
 import { v4 as uuid } from 'uuid'
 
 export const menuList = [
-  { text: en.aboutUs, id: uuid() },
-  { text: en.services, id: uuid() },
-  { text: en.contactUs, id: uuid() },
-  { text: en.blog, id: uuid() },
+  { text: en.aboutUs, id: uuid(), href: '/about-us' },
+  { text: en.services, id: uuid(), href: '/services' },
+  { text: en.contactUs, id: uuid(), href: '/contact-us' },
+  { text: en.blog, id: uuid(), href: '/blog' },
 ]
 
 export const serviceList = [
@@ -68,3 +68,16 @@ export const cardList = [
     id: uuid(),
   },
 ]
+
+export const pages = [
+  '',
+  'about-us',
+  'blog',
+  'contact-us',
+  'services',
+  'single-blog',
+]
+
+export const pagesWithFooter = pages.filter(
+  page => page !== 'about-us' && page !== 'contact-us' && page !== 'services'
+)

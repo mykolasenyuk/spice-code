@@ -3,18 +3,23 @@ import LogoSvg from '../../../public/icons/logo'
 import styles from './styles.module.scss'
 import { useSelector } from 'react-redux'
 import { RootState } from '../../redux/store'
+import { AppLink } from '../appLink'
 
 const Header = () => {
-  const { isDarkModeEnabled } = useSelector((state: RootState) => state.darkMode)
+  const { isDarkModeEnabled } = useSelector(
+    (state: RootState) => state.darkMode
+  )
 
   return (
-    <div className={styles.header}>
-      <LogoSvg
-        svgTag={{ style: { cursor: 'pointer' } }}
-        pathTag={isDarkModeEnabled ? { fill: '#fff' } : {}}
-      />
+    <header className={styles.header}>
+      <AppLink href='/'>
+        <LogoSvg
+          svgTag={{ style: { cursor: 'pointer' } }}
+          pathTag={isDarkModeEnabled ? { fill: '#fff' } : {}}
+        />
+      </AppLink>
       <HeaderList />
-    </div>
+    </header>
   )
 }
 

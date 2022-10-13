@@ -1,7 +1,7 @@
 import { FC, ReactNode } from 'react'
 import { useSelector } from 'react-redux'
 import { RootState } from '../../redux/store'
-import s from './styles.module.scss'
+import classes from './styles.module.scss'
 
 interface Props {
   children: ReactNode
@@ -18,16 +18,17 @@ const Background: FC<Props> = ({ children }) => {
   const arr = Array.from(Array(num).keys())
 
   return (
-    <>
-      <div className={s.container}>{children}</div>
-      <div className={s.area}>
-        <ul className={isDarkModeEnabled ? s.circlesDark : s.circles}>
+    <main className={classes.container}>
+      <div className={classes.area}>
+        <ul
+          className={isDarkModeEnabled ? classes.circlesDark : classes.circles}>
           {arr.map(el => (
             <li key={el}></li>
           ))}
         </ul>
       </div>
-    </>
+      {children}
+    </main>
   )
 }
 
