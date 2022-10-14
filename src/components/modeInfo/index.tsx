@@ -1,6 +1,5 @@
-import { FC, useEffect } from 'react'
+import { FC } from 'react'
 import { useDispatch } from 'react-redux'
-import { changeDarkModeStatus } from '../../redux/darkModeSlice'
 
 interface Props {
   children: JSX.Element

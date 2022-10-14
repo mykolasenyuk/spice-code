@@ -1,11 +1,12 @@
 import React, { FC, ReactNode, useEffect, useState } from 'react'
 import { useSelector } from 'react-redux'
+import { pagesWithFooter } from '../../data'
 import { useDeviceWidth } from '../../hooks/useDeviceWidth'
 import { RootState } from '../../redux/store'
 import Background from '../background'
 import { Footer } from '../footer'
 import { Header } from '../header'
-import styles from './styles.module.scss'
+import classes from './styles.module.scss'
 
 interface Props {
   children: ReactNode
@@ -13,6 +14,7 @@ interface Props {
 
 const PageWrapper: FC<Props> = ({ children }) => {
   const [blur, setBlur] = useState<boolean>(false)
+  const [showFooter, setShowFooter] = useState<boolean>(false)
   const { isHeaderListOpen } = useSelector(
     (state: RootState) => state.headerList
   )
@@ -22,31 +24,32 @@ const PageWrapper: FC<Props> = ({ children }) => {
     if (!isHeaderListOpen) {
       return children
     }
-    return isSmallDevice ? null : children
+    return !isSmallDevice && children
   }
 
   useEffect(() => {
-    setBlur(!(window.location.pathname === '/'))
+    setBlur(!(location.pathname === '/'))
+    setShowFooter(
+      pagesWithFooter.some(page => location.pathname === `/${page}`)
+    )
   }, [])
 
   useEffect(() => {
     const body = document.querySelector('body')
     if (isHeaderListOpen && isSmallDevice) {
-      body.classList.add(styles['wrapper_small-menu-open'])
+      body.classList.add(classes['wrapper_small-menu-open'])
     } else {
-      body.classList.remove(styles['wrapper_small-menu-open'])
+      body.classList.remove(classes['wrapper_small-menu-open'])
     }
   }, [isHeaderListOpen, isSmallDevice])
 
   return (
     <>
-      <div className={blur ? styles.wrapper__blur : ''}></div>
-      <div className={styles.wrapper}>
+      <div className={blur ? classes.wrapper__blur : ''}></div>
+      <div className={classes.wrapper}>
         <Header />
-        <Background>
-          <div>{isShowChildren()}</div>
-        </Background>
-        <Footer />
+        <Background>{isShowChildren()}</Background>
+        {showFooter && <Footer />}
       </div>
     </>
   )

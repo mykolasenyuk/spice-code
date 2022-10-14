@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import s from './styles.module.scss'
+import classes from './styles.module.scss'
 
 interface Props {
   bgColor: 'normal' | 'dark'
@@ -7,11 +7,11 @@ interface Props {
 }
 const Hero: FC<Props> = ({ bgColor, isHeaderListOpen }) => {
   return (
-    <div className={s.container}>
-      <h1 className={bgColor !== 'dark' ? s.title1 : s.titleDark}>
+    <div className={classes.container}>
+      <h1 className={bgColor !== 'dark' ? classes.title1 : classes.titleDark}>
         Mendee<span>.</span>Digital
       </h1>
-      <h2 className={bgColor !== 'dark' ? s.title2 : s.titleDark}>
+      <h2 className={bgColor !== 'dark' ? classes.title2 : classes.titleDark}>
         A web development studio with a social impact.
       </h2>
     </div>

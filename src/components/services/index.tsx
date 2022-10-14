@@ -1,48 +1,49 @@
 import Image from 'next/image'
-import s from './styles.module.scss'
+import { FC, ReactNode, useState } from 'react'
+import { useDispatch } from 'react-redux'
 import globe from '../../../public/images/globe1.png'
 import { serviceList } from '../../data'
-import { ReactNode, useEffect, useState } from 'react'
-import Modal from '../modal'
-import { useDispatch } from 'react-redux'
 import { changeDarkModeStatus } from '../../redux/darkModeSlice'
+import Modal from '../modal'
+import classes from './styles.module.scss'
 
 interface Props {
-  children: ReactNode
+  children?: ReactNode
 }
 
-const OurServices = ({ children }) => {
+const OurServices: FC<Props> = ({ children }) => {
   const [modalIsOpen, setModalIsOpen] = useState(false)
   const [description, setDescription] = useState<string>('')
 
   const darkMode = false
   const dispatch = useDispatch()
-  const openModal = descr => {
+
+  const openModal = (info: string) => {
     setModalIsOpen(true)
-    setDescription(descr)
+    setDescription(info)
     dispatch(changeDarkModeStatus(darkMode))
   }
+
   const closeModal = () => {
     setModalIsOpen(false)
     dispatch(changeDarkModeStatus(!darkMode))
   }
 
   return (
-    <div className={s.container}>
-      <div className={s.serviceWrapper}>
-        <h1 className={s.title}>Services</h1>
-        <div className={s.imageContainer}>
-          <div className={s.imageWrapper}>
+    <div className={classes.container}>
+      <div className={classes.serviceWrapper}>
+        <h1 className={classes.title}>Services</h1>
+        <div className={classes.imageContainer}>
+          <div className={classes.imageWrapper}>
             <Image src={globe} alt='cubes' />
           </div>
         </div>
-        <ul className={s.servicesList}>
+        <ul className={classes.servicesList}>
           {serviceList.map(item => (
             <li
               key={item.id}
-              className={s.servicesLink}
-              onClick={() => openModal(item.decrs)}
-            >
+              className={classes.servicesLink}
+              onClick={() => openModal(item.description)}>
               {item.text}
             </li>
           ))}

@@ -1,6 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit'
-import headerReducer from './headerListSlice'
 import darkModeReducer from './darkModeSlice'
+import headerReducer from './headerListSlice'
 
 export const store = configureStore({
   reducer: {

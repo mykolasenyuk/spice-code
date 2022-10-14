@@ -1,10 +1,8 @@
-import React, { FC, ReactNode, useState } from 'react'
-import { useEffect } from 'react'
-// import { createPortal } from 'react-dom'
+import { FC, ReactNode, useEffect } from 'react'
 import ReactDOM from 'react-dom'
-import s from './styles.module.scss'
 import Background from '../background'
 import { BluredBack } from '../bluredBackground'
+import classes from './styles.module.scss'
 
 interface Props {
   description: string
@@ -24,14 +22,14 @@ const Modal: FC<Props> = ({ onClose, description, children }) => {
     }
   }, [])
 
-  const handleKeyPress = (e) => {
+  const handleKeyPress = e => {
     if (e.code !== 'Escape') {
       return
     }
     onClose()
   }
 
-  const handleBackdropClick = (e) => {
+  const handleBackdropClick = e => {
     if (e.target !== e.currentTarget) {
       return
     }
@@ -43,24 +41,23 @@ const Modal: FC<Props> = ({ onClose, description, children }) => {
 
   return ReactDOM.createPortal(
     <div
-      className={s.overlay}
+      className={classes.overlay}
       onClick={handleBackdropClick}
-      role="presentation"
-    >
+      role='presentation'>
       <Background>
         <BluredBack>
-          <div className={s.modal}>
-            <div className={s.backBtn} onClick={onBackBtnClick}>
-              <svg className={s.svgBtn}>
+          <div className={classes.modal}>
+            <div className={classes.backBtn} onClick={onBackBtnClick}>
+              <svg className={classes.svgBtn}>
                 <use href={`/sprite.svg#icon-mail-arrow`} />
               </svg>
             </div>
-            <h2 className={s.description}>{description}</h2>
+            <h2 className={classes.description}>{description}</h2>
           </div>
         </BluredBack>
       </Background>
     </div>,
-    document.getElementById('modal-root'),
+    document.getElementById('modal-root')
   )
 }
 

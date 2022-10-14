@@ -63,7 +63,7 @@
   text-align: center;
 }
 
-.aboutUsDescr {
+.aboutUsInfo {
   @media screen and (min-width: $md) {
     width: 50%;
   }
@@ -72,29 +72,29 @@
   flex-direction: column;
 }
 
-.descpiption:nth-child(n) {
+.description:nth-child(n) {
   @media screen and (max-width: $md) {
     margin-bottom: 45px;
   }
 }
 
-.descpiption:nth-child(2) {
+.description:nth-child(2) {
   @media screen and (max-width: $md) {
     max-width: 90%;
   }
 }
-.descpiption:nth-child(3) {
+.description:nth-child(3) {
   @media screen and (max-width: $md) {
     max-width: 55%;
   }
 }
 
-.descpiption:nth-child(4) {
+.description:nth-child(4) {
   @media screen and (max-width: $md) {
     width: 80%;
   }
 }
-.descpiption {
+.description {
   @media screen and (min-width: $md) {
     font-size: 24px;
     font-weight: 400;

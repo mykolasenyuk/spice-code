@@ -1,11 +1,11 @@
+import type { NextPage } from 'next'
 import { useEffect } from 'react'
-
 import { useDispatch } from 'react-redux'
+import Contacts from '../src/components/contactUS'
 import PageWrapper from '../src/components/pageWrapper'
-import OurServices from '../src/components/services'
 import { changeDarkModeStatus } from '../src/redux/darkModeSlice'
 
-const AboutUs = () => {
+const ContactUs: NextPage = () => {
   const dispatch = useDispatch()
 
   useEffect(() => {
@@ -14,9 +14,9 @@ const AboutUs = () => {
 
   return (
     <PageWrapper>
-      <OurServices />
+      <Contacts />
     </PageWrapper>
   )
 }
 
-export default AboutUs
+export default ContactUs

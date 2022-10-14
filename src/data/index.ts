@@ -1,47 +1,47 @@
-import en from '../../public/languages/en'
-import codeImg from '../../public/images/code-your-future.webp'
-import cardImg from '../../public/images/card.webp'
-import ballImg from '../../public/images/homeless.webp'
 import { v4 as uuid } from 'uuid'
+import cardImg from '../../public/images/card.webp'
+import codeImg from '../../public/images/code-your-future.webp'
+import ballImg from '../../public/images/homeless.webp'
+import en from '../../public/languages/en'
 
 export const menuList = [
-  { text: en.aboutUs, id: uuid() },
-  { text: en.services, id: uuid() },
-  { text: en.contactUs, id: uuid() },
-  { text: en.blog, id: uuid() },
+  { text: en.aboutUs, id: uuid(), href: '/about-us' },
+  { text: en.services, id: uuid(), href: '/services' },
+  { text: en.contactUs, id: uuid(), href: '/contact-us' },
+  { text: en.blog, id: uuid(), href: '/blog' },
 ]
 
 export const serviceList = [
   {
     text: en.websiteDesignAndCode,
     id: uuid(),
-    decrs: en.Welovegooddesignandcode,
+    description: en.weLoveGoodDesignAndCode,
   },
   {
     text: en.NFTAndBlockchainDevelopment,
     id: uuid(),
-    decrs: en.NFTandBlockchainDevelopment,
+    description: en.NFTandBlockchainDevelopment,
   },
   {
     text: en.brandingAndVisualIdentity,
     id: uuid(),
-    decrs: en.LogoscoloursTOVbrandguidelines,
+    description: en.logosColoursTOVBrandGuidelines,
   },
   {
     text: en.websiteAudit,
     id: uuid(),
-    decrs: en.Wewilllocateyourproblemsandfindsolutions,
+    description: en.weWillLocateYourProblemsAndFindSolutions,
   },
-  { text: en.graphicDesign, id: uuid(), decrs: en.Fromprinttoallthingsdigital },
+  { text: en.graphicDesign, id: uuid(), decrs: en.fromPrintToAllThingsDigital },
   {
     text: en.motionGraphics,
     id: uuid(),
-    decrs: en.Ifastaticisworthathousandwords,
+    description: en.ifAStaticIsWorthAThousandWords,
   },
   {
     text: en.solanaWithRUSTProgrammingLanguage,
     id: uuid(),
-    decrs: en.solanaWithRUSTProgrammingLanguage,
+    description: en.solanaWithRUSTProgrammingLanguage,
   },
 ]
 
@@ -67,4 +67,24 @@ export const cardList = [
     imgSrc: ballImg,
     id: uuid(),
   },
+]
+
+export const pages = [
+  '',
+  'about-us',
+  'blog',
+  'contact-us',
+  'services',
+  'single-blog',
+]
+
+export const pagesWithFooter = pages.filter(
+  page => page !== 'about-us' && page !== 'contact-us' && page !== 'services'
+)
+
+export const aboutUsDescriptions = [
+  { id: uuid(), description: en.aboutUsFirst },
+  { id: uuid(), description: en.aboutUsSecond },
+  { id: uuid(), description: en.aboutUsThird },
+  { id: uuid(), description: en.aboutUsFourth },
 ]

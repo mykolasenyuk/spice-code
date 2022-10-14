@@ -1,8 +1,8 @@
 import { useEffect } from 'react'
+import { About } from '../src/components/aboutUs'
 
 import { useDispatch } from 'react-redux'
 import PageWrapper from '../src/components/pageWrapper'
-import OurServices from '../src/components/services'
 import { changeDarkModeStatus } from '../src/redux/darkModeSlice'
 
 const AboutUs = () => {
@@ -14,7 +14,7 @@ const AboutUs = () => {
 
   return (
     <PageWrapper>
-      <OurServices />
+      <About />
     </PageWrapper>
   )
 }
