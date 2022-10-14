@@ -40,14 +40,14 @@ const en = {
     'We are working on a project where people can easily donate to homeless people via online payment. And not just money, but essentials, gift vouchers etc.',
   contactlessHomelessDonationSecondInfo:
     'CodeYourFuture is a non-profit organisation that trains refugees and disadvantaged people to become web developers help them by providing our TIER 1 services.',
-  Welovegooddesignandcode: 'We love good design and code',
-  Wewilllocateyourproblemsandfindsolutions:
+  weLoveGoodDesignAndCode: 'We love good design and code',
+  weWillLocateYourProblemsAndFindSolutions:
     'We will locate your problems and find solutions',
-  LogoscoloursTOVbrandguidelines: 'Logos, colours, TOV, brand guidelines',
+  logosColoursTOVBrandGuidelines: 'Logos, colours, TOV, brand guidelines',
   NFTandBlockchainDevelopment: 'NFT & Blockchain Development',
-  SolanawithRUSTprogramminglanguage: 'Solana with RUST programming language',
-  Fromprinttoallthingsdigital: 'From print to all things digital',
-  Ifastaticisworthathousandwords:
+  solanaWithRustProgrammingLanguage: 'Solana with RUST programming language',
+  fromPrintToAllThingsDigital: 'From print to all things digital',
+  ifAStaticIsWorthAThousandWords:
     'If a static is worth a thousand words, a motion is worth a million.',
 }
 

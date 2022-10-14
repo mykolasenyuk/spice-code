@@ -17,11 +17,13 @@ const OurServices: FC<Props> = ({ children }) => {
 
   const darkMode = false
   const dispatch = useDispatch()
-  const openModal = descr => {
+
+  const openModal = (info: string) => {
     setModalIsOpen(true)
-    setDescription(descr)
+    setDescription(info)
     dispatch(changeDarkModeStatus(darkMode))
   }
+
   const closeModal = () => {
     setModalIsOpen(false)
     dispatch(changeDarkModeStatus(!darkMode))
@@ -41,7 +43,7 @@ const OurServices: FC<Props> = ({ children }) => {
             <li
               key={item.id}
               className={classes.servicesLink}
-              onClick={() => openModal(item.decrs)}>
+              onClick={() => openModal(item.description)}>
               {item.text}
             </li>
           ))}

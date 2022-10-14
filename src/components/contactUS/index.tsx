@@ -1,27 +1,28 @@
 import Image from 'next/image'
-import s from './styles.module.scss'
 import cubes from '../../../public/images/3d rectangles cube.png'
+import en from '../../../public/languages/en'
+import classes from './styles.module.scss'
 
 const Contacts = () => {
   return (
-    <div className={s.container}>
-      <h1 className={s.title}>Contact</h1>
-      <ul className={s.contactsWrapper}>
+    <div className={classes.container}>
+      <h1 className={classes.title}>{en.contactUs}</h1>
+      <ul className={classes.contactsWrapper}>
         <li>
-          <h3 className={s.contactsTitle}>
+          <h3 className={classes.contactsTitle}>
             Subscribe for <br />
             monthly newsletter
           </h3>
-          <div className={s.socialInput}>
-            <form className={s.inputForm}>
+          <div className={classes.socialInput}>
+            <form className={classes.inputForm}>
               <input
-                className={s.input}
-                type="email"
-                placeholder="hello@mendee.digital"
+                className={classes.input}
+                type='email'
+                placeholder='hello@mendee.digital'
               />
 
               <div>
-                <svg className={s.inputBtn}>
+                <svg className={classes.inputBtn}>
                   <use href={`/sprite.svg#icon-mail-arrow`} />
                 </svg>
               </div>
@@ -29,22 +30,44 @@ const Contacts = () => {
           </div>
         </li>
         <li>
-          <h3 className={s.contactsTitle}> Social Media</h3>
-          <ul className={s.linkWrapper}>
-            <li className={s.socialLink}>linkedin</li>
-            <li className={s.socialLink}>instagram</li>
+          <h3 className={classes.contactsTitle}>{en.socialMedia}</h3>
+          <ul className={classes.linkWrapper}>
+            <li className={classes.socialLink}>
+              <a
+                className={classes.socialLink}
+                href='https://www.linkedin.com/company/mendee/'>
+                {en.linkedin}
+              </a>
+            </li>
+            <li className={classes.socialLink}>
+              <a
+                className={classes.socialLink}
+                href='https://www.instagram.com/mendee_digital/'>
+                {en.instagram}
+              </a>
+            </li>
           </ul>
         </li>
         <li>
-          <h3 className={s.contactsTitle}>Get a quote</h3>
-          <ul className={s.linkWrapper}>
-            <li className={s.socialLink}>Hello@mendee.digital</li>
-            <li className={s.socialLink}>+44(0)77777777</li>
+          <h3 className={classes.contactsTitle}>{en.getAQuote}</h3>
+          <ul className={classes.linkWrapper}>
+            <li className={classes.socialLink}>
+              <a
+                className={classes.socialLink}
+                href='mailto:hello@mendee.digital'>
+                {en.mendeeEmail}
+              </a>
+            </li>
+            <li className={classes.socialLink}>
+              <a className={classes.socialLink} href='tel:+44(0)77777777'>
+                {en.mendeePhoneNumber}
+              </a>
+            </li>
           </ul>
         </li>
       </ul>
-      <div className={s.imageContainer}>
-        <Image className={s.image} src={cubes} alt="cubes" />
+      <div className={classes.imageContainer}>
+        <Image className={classes.image} src={cubes} alt='cubes' />
       </div>
     </div>
   )

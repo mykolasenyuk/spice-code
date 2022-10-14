@@ -1,24 +1,20 @@
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 import { About } from '../src/components/aboutUs'
-import { BluredBack } from '../src/components/bluredBackground'
 
-import { useDispatch, useSelector } from 'react-redux'
-import { changeDarkModeStatus } from '../src/redux/darkModeSlice'
+import { useDispatch } from 'react-redux'
 import PageWrapper from '../src/components/pageWrapper'
+import { changeDarkModeStatus } from '../src/redux/darkModeSlice'
 
 const AboutUs = () => {
-  const darkMode = true
   const dispatch = useDispatch()
 
   useEffect(() => {
-    dispatch(changeDarkModeStatus(darkMode))
+    dispatch(changeDarkModeStatus(true))
   }, [dispatch])
 
   return (
     <PageWrapper>
-      <BluredBack>
-        <About />
-      </BluredBack>
+      <About />
     </PageWrapper>
   )
 }
