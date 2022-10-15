@@ -32,7 +32,11 @@ export const serviceList = [
     id: uuid(),
     description: en.weWillLocateYourProblemsAndFindSolutions,
   },
-  { text: en.graphicDesign, id: uuid(), decrs: en.fromPrintToAllThingsDigital },
+  {
+    text: en.graphicDesign,
+    id: uuid(),
+    description: en.fromPrintToAllThingsDigital,
+  },
   {
     text: en.motionGraphics,
     id: uuid(),
