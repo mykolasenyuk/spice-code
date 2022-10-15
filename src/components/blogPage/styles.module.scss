@@ -44,6 +44,12 @@
     @media (min-width: $md) {
       display: flex;
       justify-content: space-between;
+      margin: 30px 0 13px 0;
+    }
+
+    @media (min-width: $xl) {
+      display: flex;
+      justify-content: space-between;
       margin: 65px 0;
     }
   }
