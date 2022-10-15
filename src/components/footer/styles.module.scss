@@ -2,6 +2,7 @@
 
 .footer {
   transition: $default-transition;
+  background: rgba(255, 255, 255, 0);
 
   @media (min-width: $md) {
     transform: translateY(0) !important;
