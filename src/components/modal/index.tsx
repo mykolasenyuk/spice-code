@@ -43,7 +43,8 @@ const Modal: FC<Props> = ({ onClose, description, children }) => {
     <div
       className={classes.overlay}
       onClick={handleBackdropClick}
-      role='presentation'>
+      role='presentation'
+    >
       <Background>
         <BluredBack>
           <div className={classes.modal}>
