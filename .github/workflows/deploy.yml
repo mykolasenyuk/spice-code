@@ -1,0 +1,25 @@
+name: deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+    - name: Deploy by SSH commands
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USERNAME }}
+        key: ${{ secrets.KEY }}
+        port: ${{ secrets.PORT }}
+        script: |
+          cd ~/mendee.digital-2.0
+          git pull origin main
+          cd docker
+          docker-compose build app
+          docker-compose up -d app
