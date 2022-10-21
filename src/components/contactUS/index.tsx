@@ -35,14 +35,16 @@ const Contacts = () => {
             <li className={classes.socialLink}>
               <a
                 className={classes.socialLink}
-                href='https://www.linkedin.com/company/mendee/'>
+                href='https://www.linkedin.com/company/mendee/'
+              >
                 {en.linkedin}
               </a>
             </li>
             <li className={classes.socialLink}>
               <a
                 className={classes.socialLink}
-                href='https://www.instagram.com/mendee_digital/'>
+                href='https://www.instagram.com/mendee_digital/'
+              >
                 {en.instagram}
               </a>
             </li>
@@ -54,7 +56,8 @@ const Contacts = () => {
             <li className={classes.socialLink}>
               <a
                 className={classes.socialLink}
-                href='mailto:hello@mendee.digital'>
+                href='mailto:hello@mendee.digital'
+              >
                 {en.mendeeEmail}
               </a>
             </li>
@@ -67,7 +70,14 @@ const Contacts = () => {
         </li>
       </ul>
       <div className={classes.imageContainer}>
-        <Image className={classes.image} src={cubes} alt='cubes' />
+        {/* <Image className={classes.card__img} src={imgSrc} alt={imgAlt} /> */}
+        <Image
+          className={classes.image}
+          src={cubes}
+          alt='cubes'
+          // width={350}
+          // height={300}
+        />
       </div>
     </div>
   )
