@@ -5,7 +5,6 @@
   margin: 0 auto;
   color: #fff;
   position: relative;
-
   @media (min-width: $xl) {
     width: 100%;
   }
@@ -38,7 +37,6 @@
   &__img {
     display: flex;
     justify-content: center;
-
     &-content {
       max-width: 100%;
       height: 100%;
@@ -51,7 +49,6 @@
     font-weight: 500;
     font-size: 48px;
     line-height: 58px;
-
     &_phone {
       display: block;
       margin: 0 40px;
@@ -76,5 +73,36 @@
     font-weight: 400;
     font-size: 24px;
     line-height: 28.8px;
+  }
+}
+.backBtn {
+  position: absolute;
+  top: 3%;
+  left: 0%;
+  fill: #fff;
+}
+.svgBtn {
+  width: 40px;
+  height: 40px;
+  transform: rotate(180deg);
+  &:hover,
+  :focus {
+    animation: rotate-scale 0.65s linear both;
+    fill: #ffa837;
+  }
+}
+
+@keyframes rotate-scale {
+  0% {
+    -webkit-transform: scale(1) rotateZ(0);
+    transform: scale(1) rotateZ(0);
+  }
+  50% {
+    -webkit-transform: scale(1) rotateZ(90deg);
+    transform: scale(1.5) rotateZ(90deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotateZ(180deg);
+    transform: scale(1) rotateZ(180deg);
   }
 }

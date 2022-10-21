@@ -1,7 +1,7 @@
 @import '../../styles/variables.scss';
 
 .container {
-  padding: 67px 20px 0 20px;
+  padding: 70px 20px 0 20px;
   color: #fff;
   max-width: $container;
   margin: 0 auto;
@@ -40,8 +40,6 @@
     // margin-top: 140px;
     // margin-bottom: 80px;
   }
-  // position: relative;
-  // height: 100%;
 }
 .title {
   font-family: Gilroy, sans-serif;
@@ -99,6 +97,7 @@
     font-size: 24px;
     font-weight: 400;
     line-height: 1.26;
+    margin-bottom: 31px;
   }
   font-size: 16px;
   font-weight: 400;
@@ -118,20 +117,18 @@
 
 .imageContainer {
   animation: roll-in-right 1.8s ease-out both;
-  // animation: slide-in-blurred-left 0.6s cubic-bezier(0.23, 1, 0.32, 1) both;
   position: absolute;
   top: 45%;
   left: 48%;
-  // width: 100%;
+
   width: 315px;
   @media screen and (min-width: 640px) and (max-width: 768px) {
     position: absolute;
-    // top: 50%;
     left: 68%;
   }
 
   @media screen and (min-width: $md) {
-    top: 20%;
+    top: 87px;
     left: 55%;
     width: 500px;
   }

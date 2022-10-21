@@ -19,12 +19,11 @@ const BlogCard: FC<Props> = ({ imgSrc, imgAlt, title, info }) => {
       <h3 className={classes.card__title}>{title}</h3>
       <p className={blogPageClasses.blog__description}>{info}</p>
       <AppLink href='/single-blog'>
-        <Sprite
-          id='icon-arrow-btn'
-          width={59.04}
-          height={28.69}
-          className={classes.card__btn}
-        />
+        <div className={classes.backBtn}>
+          <svg className={classes.svgBtn}>
+            <use href={`/sprite.svg#icon-mail-arrow`} />
+          </svg>
+        </div>
       </AppLink>
     </div>
   )

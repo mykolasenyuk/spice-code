@@ -83,7 +83,7 @@ export const pages = [
 ]
 
 export const pagesWithFooter = pages.filter(
-  page => page !== 'about-us' && page !== 'contact-us' && page !== 'services'
+  page => page !== 'contact-us' && page !== 'services'
 )
 
 export const aboutUsDescriptions = [
