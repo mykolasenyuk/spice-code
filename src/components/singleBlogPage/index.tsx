@@ -9,13 +9,19 @@ const SingleBlogPage = () => {
   return (
     <div className={classes['single-blog']}>
       <AppLink href='/blog'>
-        <div className={classes['single-blog__go-back']}>
-          <Sprite id={'icon-arrow-back'} width={15.22} height={11.28} />
+        {/* <div className={classes['single-blog__go-back']}> */}
+        <div className={classes.backBtn}>
+          <svg className={classes.svgBtn}>
+            <use href={`/sprite.svg#icon-mail-arrow`} />
+          </svg>
         </div>
+        {/* <Sprite id={'icon-arrow-back'} width={15.22} height={11.28} /> */}
+        {/* </div> */}
       </AppLink>
       <div className={classes['single-blog__container']}>
         <h2
-          className={`${classes['single-blog__title']} ${classes['single-blog__title_phone']}`}>
+          className={`${classes['single-blog__title']} ${classes['single-blog__title_phone']}`}
+        >
           {en.codeYourFuture.toLowerCase()}
         </h2>
         <div className={classes['single-blog__img']}>
@@ -26,7 +32,8 @@ const SingleBlogPage = () => {
           />
         </div>
         <h2
-          className={`${classes['single-blog__title']} ${classes['single-blog__title_laptop']}`}>
+          className={`${classes['single-blog__title']} ${classes['single-blog__title_laptop']}`}
+        >
           {en.codeYourFuture.toLowerCase()}
         </h2>
         <p className={classes['single-blog__description']}>

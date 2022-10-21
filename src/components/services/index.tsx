@@ -5,6 +5,7 @@ import globe from '../../../public/images/globe1.png'
 import { serviceList } from '../../data'
 import { changeDarkModeStatus } from '../../redux/darkModeSlice'
 import Modal from '../modal'
+import { Sprite } from '../sprite'
 import classes from './styles.module.scss'
 
 interface Props {
@@ -38,13 +39,20 @@ const OurServices: FC<Props> = ({ children }) => {
             <Image src={globe} alt='cubes' />
           </div>
         </div>
+
         <ul className={classes.servicesList}>
           {serviceList.map(item => (
             <li
               key={item.id}
               className={classes.servicesLink}
-              onClick={() => openModal(item.description)}>
-              {item.text}
+              onClick={() => openModal(item.description)}
+            >
+              <div>
+                <svg className={classes.inputBtn}>
+                  <use href={`/sprite.svg#icon-plus`} />
+                </svg>
+              </div>
+              <p>{item.text}</p>
             </li>
           ))}
         </ul>

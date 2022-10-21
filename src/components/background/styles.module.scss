@@ -18,8 +18,60 @@
   width: 100%;
   height: 100vh;
   overflow: hidden;
-  background-color: #f6e9df;
+  // background-color: #f6e9df;
   transition: 350ms cubic-bezier(0.4, 0, 0.2, 1);
+  // background: linear-gradient(270deg, #f9d8ad, #f6e9df, #8590b2);
+  background: linear-gradient(270deg, #f9d8ad, #f6e9df, #afb5c8);
+  background-size: 600% 600%;
+
+  -webkit-animation: AnimationName 19s ease infinite;
+  -moz-animation: AnimationName 19s ease infinite;
+  animation: AnimationName 19s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 45%;
+  }
+  50% {
+    background-position: 100% 56%;
+  }
+  100% {
+    background-position: 0% 45%;
+  }
+}
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 0% 45%;
+  }
+  50% {
+    background-position: 100% 56%;
+  }
+  100% {
+    background-position: 0% 45%;
+  }
+}
+@-o-keyframes AnimationName {
+  0% {
+    background-position: 0% 45%;
+  }
+  50% {
+    background-position: 100% 56%;
+  }
+  100% {
+    background-position: 0% 45%;
+  }
+}
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 45%;
+  }
+  50% {
+    background-position: 100% 56%;
+  }
+  100% {
+    background-position: 0% 45%;
+  }
 }
 
 // .circlesOpen {
@@ -57,14 +109,14 @@
 }
 .circles li:nth-child(2) {
   left: 3%;
-  width: 232px;
-  height: 232px;
+  width: 200px;
+  height: 200px;
   animation-delay: 2s;
   animation-duration: 12s;
   background: rgba(49, 65, 114, 1);
   @media screen and (min-width: 700px) {
-    width: 332px;
-    height: 332px;
+    width: 232px;
+    height: 232px;
   }
 }
 
@@ -105,13 +157,14 @@
 
 .circles li:nth-child(7) {
   @media screen and (min-width: 700px) {
-    width: 400px;
-    height: 400px;
+    width: 200px;
+    height: 200px;
   }
   left: 35%;
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   animation-delay: 0s;
+  background: rgba(255, 168, 55, 1);
 
   // background: linear-gradient(
   //   -115deg,
@@ -119,7 +172,7 @@
   //   rgba(255, 168, 55, 1),
   //   rgba(255, 255, 255, 1)
   // );
-  background: linear-gradient(289deg, #314172, #ffa737, #fbfafa);
+  // background: linear-gradient(289deg, #314172, #ffa737, #fbfafa);
   // background-size: 600% 600%;
 
   // animation: AnimationName 42s ease infinite;
