@@ -112,7 +112,7 @@
   width: 200px;
   height: 200px;
   animation-delay: 2s;
-  animation-duration: 12s;
+  animation-duration: 29s;
   background: rgba(49, 65, 114, 1);
   @media screen and (min-width: 700px) {
     width: 232px;
@@ -124,7 +124,7 @@
   left: 70%;
   width: 86px;
   height: 86px;
-  animation-delay: 4s;
+  animation-delay: 11s;
   background: rgba(49, 65, 114, 1);
 }
 
@@ -133,7 +133,7 @@
   width: 60px;
   height: 60px;
   animation-delay: 0s;
-  animation-duration: 18s;
+  animation-duration: 23s;
   background: rgba(255, 255, 255, 1);
 }
 
@@ -142,7 +142,7 @@
   width: 50px;
   height: 50px;
   animation-delay: 1s;
-  animation-duration: 13s;
+  animation-duration: 18s;
   background: rgba(255, 255, 255, 1);
 }
 
@@ -150,8 +150,8 @@
   left: 75%;
   width: 210px;
   height: 210px;
-  animation-delay: 2s;
-  animation-duration: 11s;
+  animation-delay: 4s;
+  animation-duration: 24s;
   background: rgba(255, 255, 255, 1);
 }
 
@@ -164,6 +164,7 @@
   width: 200px;
   height: 200px;
   animation-delay: 0s;
+  animation-duration: 32s;
   background: rgba(255, 168, 55, 1);
 
   // background: linear-gradient(
@@ -191,7 +192,7 @@
   width: 35px;
   height: 35px;
   animation-delay: 2s;
-  animation-duration: 35s;
+  animation-duration: 40s;
 }
 
 .circles li:nth-child(10) {
@@ -199,34 +200,40 @@
   width: 150px;
   height: 150px;
   animation-delay: 0s;
-  animation-duration: 11s;
+  animation-duration: 21s;
 }
 .circles li:nth-child(11) {
   left: 15%;
   width: 40px;
   height: 40px;
   animation-delay: 3s;
-  animation-duration: 17s;
+  animation-duration: 21s;
 }
 .circles li:nth-child(12) {
   left: 54%;
   width: 46px;
   height: 46px;
   animation-delay: 1s;
-  animation-duration: 14s;
+  animation-duration: 18s;
   background: rgba(49, 65, 114, 1);
 }
 
 @keyframes animate {
   0% {
     transform: translateY(0) rotate(0deg);
+    // -webkit-transform:translateY(400px) rotate(0deg);
     opacity: 1;
+    border-radius: 100%;
+  }
+  50% {
+    transform: translateY(-1000px) rotate(360deg);
+    opacity: 0.3;
     border-radius: 100%;
   }
 
   100% {
-    transform: translateY(-1000px) rotate(720deg);
-    opacity: 0.1;
+    transform: translateY(-1500px) rotate(720deg);
+    opacity: 0;
     border-radius: 100%;
   }
 }
