@@ -32,14 +32,14 @@ const en = {
   socialImpactInitiatives: 'social impact initiatives',
   blogDescription:
     'Our studio was founded with social responsibility at heart. We are aiming to find talent among people in need, who lost their homes and jobs during the war, who had to flee their country, or disadvantaged people who are simply overlooked in our society. We are working together with social enterprises around the world. The beneficiaries of our projects are significantly changed and empowered - they gain new skills, start earning a living  and above all, regain self-confidence.',
-  codeYourFuture: 'Code your future',
-  contactlessHomelessDonation: 'Contactless Homeless Donation',
+  codeYourFuture: 'Work and training',
+  contactlessHomelessDonation: 'Refugee UK guide ',
   codeYourFutureInfo:
-    'CodeYourFuture is a non-profit organisation that trains refugees and disadvantaged people to become web developers and we want to help them to find work in the tech industry by providing our TIER 1 services.',
+    'This is an idea based on helping adult graduates of IT bootcamps in Ukraine and refugees in the UK. Give them the opportunity to get their first experience and build a portfolio.For Ukrainians, we provide a monthly salary and the opportunity to use 50% of the time for study and freelancing.',
   contactlessHomelessDonationFirstInfo:
     'We are working on a project where people can easily donate to homeless people via online payment. And not just money, but essentials, gift vouchers etc.',
   contactlessHomelessDonationSecondInfo:
-    'CodeYourFuture is a non-profit organisation that trains refugees and disadvantaged people to become web developers help them by providing our TIER 1 services.',
+    'Every refugee in the UK is faced with a complete misunderstanding of how to start a new life from scratch. We want to make a clear guide in the native language of the refugee about all the possibilities of study, career, language courses and everything you need to become a full and useful member of society.',
   weLoveGoodDesignAndCode: 'We love good design and code',
   weWillLocateYourProblemsAndFindSolutions:
     'We will locate your problems and find solutions',
