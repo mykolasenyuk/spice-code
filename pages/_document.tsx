@@ -3,6 +3,7 @@ import { Head, Html, Main, NextScript } from 'next/document'
 const Document = () => {
   return (
     <Html>
+      <title>Mendee.Digital</title>
       <Head>
         <link
           rel='stylesheet'
