@@ -33,11 +33,12 @@ const en = {
   blogDescription:
     'Our studio was founded with social responsibility at heart. We are aiming to find talent among people in need, who lost their homes and jobs during the war, who had to flee their country, or disadvantaged people who are simply overlooked in our society. We are working together with social enterprises around the world. The beneficiaries of our projects are significantly changed and empowered - they gain new skills, start earning a living  and above all, regain self-confidence.',
   codeYourFuture: 'Work and training',
-  contactlessHomelessDonation: 'Refugee UK guide ',
+  contactlessHomelessDonation: 'Contactless Homeless Donation',
   codeYourFutureInfo:
     'This is an idea based on helping adult graduates of IT bootcamps in Ukraine and refugees in the UK. Give them the opportunity to get their first experience and build a portfolio.For Ukrainians, we provide a monthly salary and the opportunity to use 50% of the time for study and freelancing.',
   contactlessHomelessDonationFirstInfo:
     'We are working on a project where people can easily donate to homeless people via online payment. And not just money, but essentials, gift vouchers etc.',
+  RefugeeUKguide: 'Refugee UK guide ',
   contactlessHomelessDonationSecondInfo:
     'Every refugee in the UK is faced with a complete misunderstanding of how to start a new life from scratch. We want to make a clear guide in the native language of the refugee about all the possibilities of study, career, language courses and everything you need to become a full and useful member of society.',
   weLoveGoodDesignAndCode: 'We love good design and code',

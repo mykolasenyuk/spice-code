@@ -65,7 +65,7 @@ export const cardList = [
     id: uuid(),
   },
   {
-    title: en.contactlessHomelessDonation,
+    title: en.RefugeeUKguide,
     description: en.contactlessHomelessDonationSecondInfo,
     alt: 'Ball',
     imgSrc: ballImg,
