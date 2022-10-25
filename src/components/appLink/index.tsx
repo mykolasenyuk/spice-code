@@ -1,13 +1,14 @@
 import Link from 'next/link'
+import { ParsedUrlQueryInput } from 'querystring'
 import { CSSProperties, FC, memo, ReactNode } from 'react'
-import { Url } from 'url'
 
 interface Props {
   children: ReactNode
-  href: Url | string
+  href: string
   className?: string
   style?: CSSProperties
   onClick?: () => void
+  query?: string | ParsedUrlQueryInput
 }
 
 const AppLinkComponent: FC<Props> = ({
@@ -16,8 +17,9 @@ const AppLinkComponent: FC<Props> = ({
   className,
   style,
   onClick = () => {},
+  query = {},
 }) => (
-  <Link className={className} href={href} passHref>
+  <Link className={className} href={{ pathname: href, query }} passHref>
     <a onClick={onClick} style={style}>
       {children}
     </a>

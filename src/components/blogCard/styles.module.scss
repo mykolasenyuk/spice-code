@@ -14,7 +14,7 @@
 
   @media (min-width: $xl) {
     padding: 0;
-    height: 440px;
+    height: '100%';
   }
 
   &__img {
@@ -28,16 +28,22 @@
   }
 
   &__title {
+    height: 76px;
     font-family: Gilroy, sans-serif;
     font-weight: 500;
     font-size: 24px;
     line-height: 30.4px;
-    margin: 16px 0 auto 0;
+    margin: 16px 0;
 
     @media (min-width: $xl) {
       font-size: 32px;
       line-height: 38.4px;
     }
+  }
+
+  &__description {
+    margin: auto 0 auto 0;
+    font-size: 20px;
   }
 
   &__btn {
@@ -75,11 +81,11 @@
     transform: scale(1) rotateZ(0);
   }
   50% {
-    -webkit-transform: scale(1) rotateZ(90deg);
-    transform: scale(1.5) rotateZ(90deg);
+    -webkit-transform: scale(1) rotateZ(180deg);
+    transform: scale(1.5) rotateZ(180deg);
   }
   100% {
-    -webkit-transform: scale(1) rotateZ(180deg);
-    transform: scale(1) rotateZ(180deg);
+    -webkit-transform: scale(1) rotateZ(360deg);
+    transform: scale(1) rotateZ(360deg);
   }
 }
