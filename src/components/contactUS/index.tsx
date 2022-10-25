@@ -70,13 +70,7 @@ const Contacts = () => {
         </li>
       </ul>
       <div className={classes.imageContainer}>
-        <Image
-          className={classes.image}
-          src={cubes}
-          alt='cubes'
-          // width={350}
-          // height={300}
-        />
+        <Image className={classes.image} src={cubes} alt='cubes' />
       </div>
     </div>
   )

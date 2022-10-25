@@ -5,8 +5,7 @@ import classes from './styles.module.scss'
 
 interface Props {
   children: ReactNode
-  // bgColor: 'normal' | 'dark' | 'light'
-  // open: string
+  
 }
 
 const Background: FC<Props> = ({ children }) => {

@@ -11,11 +11,7 @@ interface Props {
 }
 
 const Modal: FC<Props> = ({ onClose, description, children }) => {
-  //   const [isBrowser, setIsBrowser] = useState(false)
-
   useEffect(() => {
-    // setIsBrowser(true)
-
     window.addEventListener('keydown', handleKeyPress)
     return () => {
       window.removeEventListener('keydown', handleKeyPress)

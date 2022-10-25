@@ -3,6 +3,7 @@
 .card {
   display: flex;
   flex-direction: column;
+  padding-bottom: 20px;
 
   @media (min-width: $md) {
     display: flex;
@@ -43,7 +44,10 @@
 
   &__description {
     margin: auto 0 auto 0;
-    font-size: 20px;
+    font-size: 14px;
+    @media (min-width: $xl) {
+      font-size: 20px;
+    }
   }
 
   &__btn {
@@ -60,9 +64,6 @@
 .backBtn {
   display: flex;
   justify-content: flex-end;
-  // position: relative;
-  // top: 3%;
-  // right: 3%;
 }
 .svgBtn {
   width: 40px;

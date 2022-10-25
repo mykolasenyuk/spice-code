@@ -9,7 +9,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  // background-color: rgba(0, 0, 0, 0.8);
   z-index: 1200;
   animation: scale-up-ver-top 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
@@ -39,7 +38,6 @@
   &:hover,
   :focus {
     animation: rotate-scale-up 0.65s linear both;
-    // transform: rotate(180deg) scale(1.2);
 
     fill: #ffa837;
   }
