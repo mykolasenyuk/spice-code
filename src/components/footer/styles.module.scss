@@ -79,3 +79,15 @@
     }
   }
 }
+.socialLink {
+  @media screen and (min-width: $md) {
+    text-transform: lowercase;
+  }
+
+  transition: all 150ms ease-out 110ms;
+  &:hover,
+  :focus {
+    color: #ffa837;
+    transform: scale(1.03);
+  }
+}

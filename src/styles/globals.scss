@@ -29,8 +29,9 @@ ul {
 @font-face {
   font-family: 'Gilroy';
   src: url('../fonts/Gilroy/Gilroy-Regular.ttf');
-  font-weight: 400;
+  font-weight: 300;
   font-style: normal;
+  letter-spacing: 0.04em;
 }
 
 @font-face {
@@ -38,6 +39,7 @@ ul {
   src: url('../fonts/Gilroy/Gilroy-Medium.ttf');
   font-weight: 500;
   font-style: normal;
+  letter-spacing: 0.04em;
 }
 
 @font-face {
@@ -45,6 +47,7 @@ ul {
   src: url('../fonts/Gilroy/Gilroy-Bold.ttf');
   font-weight: 700;
   font-style: normal;
+  letter-spacing: 0.04em;
 }
 
 /* @font-face {

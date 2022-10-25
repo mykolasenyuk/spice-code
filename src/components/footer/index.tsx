@@ -23,7 +23,8 @@ const Footer = () => {
         borderTop: borderColorByDarkMode(),
         transform: `translateY(${isHeaderListOpen ? '100%' : 0})`,
       }}
-      className={styles.footer}>
+      className={styles.footer}
+    >
       <div className={styles.footer__content}>
         <div className={`${styles.footer__block} ${styles.footer__info}`}>
           {en.footerBigText}
@@ -33,11 +34,27 @@ const Footer = () => {
             borderRight: borderColorByDarkMode(),
             borderLeft: borderColorByDarkMode(isSmallDevice ? 0 : undefined),
           }}
-          className={`${styles.footer__block} ${styles.footer__social}`}>
+          className={`${styles.footer__block} ${styles.footer__social}`}
+        >
           <h6 className={styles.footer__title}>{en.socialMedia}</h6>
           <ul className={styles.footer__list}>
-            <li>{en.linkedin}</li>
-            <li>{en.instagram}</li>
+            <li>
+              <a
+                className={styles.socialLink}
+                href='https://www.linkedin.com/company/mendee/'
+              >
+                {en.linkedin}
+              </a>
+            </li>
+            <li>
+              {' '}
+              <a
+                className={styles.socialLink}
+                href='https://www.instagram.com/mendee_digital/'
+              >
+                {en.instagram}
+              </a>
+            </li>
           </ul>
         </div>
         <div className={`${styles.footer__block} ${styles.footer__social}`}>
