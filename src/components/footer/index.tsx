@@ -47,7 +47,6 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              {' '}
               <a
                 className={styles.socialLink}
                 href='https://www.instagram.com/mendee_digital/'
@@ -60,8 +59,19 @@ const Footer = () => {
         <div className={`${styles.footer__block} ${styles.footer__social}`}>
           <h6 className={styles.footer__title}>{en.getAQuote}</h6>
           <ul className={styles.footer__list}>
-            <li>{en.mendeeEmail}</li>
-            <li>{en.mendeePhoneNumber}</li>
+            <li>
+              <a
+                className={styles.socialLink}
+                href='mailto:hello@mendee.digital'
+              >
+                {en.mendeeEmail}
+              </a>
+            </li>
+            <li>
+              <a className={styles.socialLink} href='tel:+44(0)77777777'>
+                {en.mendeePhoneNumber}
+              </a>
+            </li>
           </ul>
         </div>
       </div>
