@@ -14,14 +14,11 @@ const SingleBlogPage = () => {
   return (
     <div className={classes['single-blog']}>
       <AppLink href='/blog'>
-        {/* <div className={classes['single-blog__go-back']}> */}
         <div className={classes.backBtn}>
           <svg className={classes.svgBtn}>
             <use href={`/sprite.svg#icon-mail-arrow`} />
           </svg>
         </div>
-        {/* <Sprite id={'icon-arrow-back'} width={15.22} height={11.28} /> */}
-        {/* </div> */}
       </AppLink>
       <div className={classes['single-blog__container']}>
         <h2
