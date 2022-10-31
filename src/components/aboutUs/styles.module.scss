@@ -111,12 +111,13 @@
     font-weight: 400;
     line-height: 1.2;
   }
-
+  color: #ffa837;
   font-size: 18px;
   font-weight: 400;
   transition: all 150ms ease-out 110ms;
   &:hover,
   :focus {
+    text-decoration: underline;
     color: #ffa837;
     transform: scale(1.03);
   }

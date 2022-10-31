@@ -48,7 +48,9 @@ export const cardList = [
   {
     title: en.alexStory,
     description: en.alexStoryDescr,
-    description1: en.alexStorydescr1,
+    descr1: en.alexStoryDescr1,
+    descr2: en.alexStoryDescr2,
+    descr3: en.alexStoryDescr3,
     alt: 'Alex story photo',
     imgSrc: alexPhoto,
     descrImg: alexDescrImg,

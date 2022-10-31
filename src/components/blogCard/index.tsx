@@ -9,7 +9,9 @@ interface Props {
   imgAlt: string
   title: string
   info: string
-  description1?: string
+  descr1?: string
+  descr2?: string
+  descr3?: string
   descrImg?: string
 }
 
@@ -18,7 +20,9 @@ const BlogCard: FC<Props> = ({
   imgAlt,
   title,
   info,
-  description1,
+  descr1,
+  descr2,
+  descr3,
   descrImg,
 }) => {
   const img = imgSrc.src
@@ -35,7 +39,7 @@ const BlogCard: FC<Props> = ({
       </p>
       <AppLink
         href='/single-blog'
-        query={{ img, imgAlt, title, info, description1, descrImg }}
+        query={{ img, imgAlt, title, info, descr1, descr2, descr3, descrImg }}
       >
         <div className={classes.backBtn}>
           <svg className={classes.svgBtn}>

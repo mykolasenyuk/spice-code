@@ -7,7 +7,7 @@ import { useRouter } from 'next/router'
 
 const SingleBlogPage = () => {
   const {
-    query: { img, imgAlt, title, info, description1, descrImg },
+    query: { img, imgAlt, title, info, descr1, descr2, descr3,  descrImg },
   } = useRouter()
 
   return (
@@ -54,8 +54,14 @@ const SingleBlogPage = () => {
           )}
         </div>
 
-        {description1 && (
-          <p className={classes['single-blog__description2']}>{description1}</p>
+        {descr1 && (
+          <p className={classes['single-blog__description2']}>{descr1}</p>
+        )}
+        {descr2 && (
+          <p className={classes['single-blog__description2']}>{descr2}</p>
+        )}
+        {descr3 && (
+          <p className={classes['single-blog__description2']}>{descr3}</p>
         )}
       </div>
     </div>
