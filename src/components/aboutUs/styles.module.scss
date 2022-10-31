@@ -98,9 +98,27 @@
   }
 
   @media screen and (min-width: $md) {
-    top: 87px;
-    left: 55%;
+    top: 155px;
+    left: 53%;
     width: 500px;
+  }
+}
+
+.socialLink {
+  @media screen and (min-width: $md) {
+    text-transform: lowercase;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.2;
+  }
+
+  font-size: 18px;
+  font-weight: 400;
+  transition: all 150ms ease-out 110ms;
+  &:hover,
+  :focus {
+    color: #ffa837;
+    transform: scale(1.03);
   }
 }
 

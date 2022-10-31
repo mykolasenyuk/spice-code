@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import laptopImg from '../../../public/images/laptop.png'
 import en from '../../../public/languages/en'
 import classes from './styles.module.scss'
 import { Sprite } from '../sprite'
@@ -8,7 +7,7 @@ import { useRouter } from 'next/router'
 
 const SingleBlogPage = () => {
   const {
-    query: { imgAlt, title, info },
+    query: { img, imgAlt, title, info, description1, descrImg },
   } = useRouter()
 
   return (
@@ -24,23 +23,40 @@ const SingleBlogPage = () => {
         <h2
           className={`${classes['single-blog__title']} ${classes['single-blog__title_phone']}`}
         >
-          {title || en.codeYourFuture.toLowerCase()}
+          {title || en.alexStory.toLowerCase()}
         </h2>
         <div className={classes['single-blog__img']}>
           <Image
             className={classes['single-blog__img-container']}
-            alt={(imgAlt as string) || 'Laptop'}
-            src={laptopImg}
+            alt='desc'
+            src={img as string}
+            width={640}
+            height={330}
           />
         </div>
         <h2
           className={`${classes['single-blog__title']} ${classes['single-blog__title_laptop']}`}
         >
-          {title || en.codeYourFuture.toLowerCase()}
+          {title || en.alexStory.toLowerCase()}
         </h2>
         <p className={classes['single-blog__description']}>
-          {info || en.codeYourFutureInfo}
+          {info || en.alexStoryDescr}
         </p>
+        <div>
+          {descrImg && (
+            <Image
+              // className={classes['single-blog__img-container']}
+              alt='descImg'
+              src={descrImg as string}
+              width={640}
+              height={330}
+            />
+          )}
+        </div>
+
+        {description1 && (
+          <p className={classes['single-blog__description2']}>{description1}</p>
+        )}
       </div>
     </div>
   )
