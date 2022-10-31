@@ -1,9 +1,12 @@
 @import '../../styles/variables';
 
 .single-blog {
-  max-width: 1040px;
-  margin: 0 auto;
+  padding: 67px 20px 0 20px;
   color: #fff;
+  max-width: $container;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
   position: relative;
   @media (min-width: $xl) {
     width: 100%;
@@ -35,12 +38,13 @@
   }
 
   &__img {
-    display: flex;
-    justify-content: center;
-    &-content {
-      max-width: 100%;
-      height: 100%;
-    }
+    // display: flex;
+    // justify-content: center;
+
+    // &-content {
+    //   max-width: 100%;
+    //   height: 100%;
+    // }
   }
 
   &__title {
@@ -50,6 +54,7 @@
     font-size: 48px;
     line-height: 58px;
     &_phone {
+      font-size: 34px;
       display: block;
       margin: 0 40px;
 
@@ -74,11 +79,20 @@
     font-size: 24px;
     line-height: 28.8px;
   }
+
+  &__description2 {
+    text-align: left;
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28.8px;
+  }
 }
 .backBtn {
   position: absolute;
   top: 3%;
-  left: 0%;
+  left: 3%;
   fill: #fff;
 }
 .svgBtn {

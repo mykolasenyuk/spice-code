@@ -130,19 +130,19 @@
 .imageWrapper {
   position: absolute;
   animation: slide-in-blurred-left 0.9s cubic-bezier(0.23, 1, 0.32, 1) both;
-
-  top: 33%;
+  width: 450px;
+  top: 22%;
   right: -55%;
   z-index: 10;
   @media screen and (min-width: $xl) {
     position: absolute;
-    top: 170px;
+    top: 56px;
     left: 5%;
   }
   @media screen and (min-width: $md) and (max-width: 1074px) {
     position: absolute;
     top: 16%;
-    left: 5%;
+    left: 0%;
   }
   @media screen and (min-width: 640px) and (max-width: 740px) {
     position: absolute;

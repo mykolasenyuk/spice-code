@@ -41,6 +41,7 @@ const Footer = () => {
             <li>
               <a
                 className={styles.socialLink}
+                target='blank'
                 href='https://www.linkedin.com/company/mendee/'
               >
                 {en.linkedin}
@@ -49,6 +50,7 @@ const Footer = () => {
             <li>
               <a
                 className={styles.socialLink}
+                target='blank'
                 href='https://www.instagram.com/mendee_digital/'
               >
                 {en.instagram}
@@ -62,16 +64,17 @@ const Footer = () => {
             <li>
               <a
                 className={styles.socialLink}
+                target='blank'
                 href='mailto:hello@mendee.digital'
               >
                 {en.mendeeEmail}
               </a>
             </li>
-            <li>
+            {/* <li>
               <a className={styles.socialLink} href='tel:+44(0)77777777'>
                 {en.mendeePhoneNumber}
               </a>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>

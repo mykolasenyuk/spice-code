@@ -16,6 +16,8 @@ const BlogPage = () => {
             imgAlt={card.alt}
             info={card.description}
             title={card.title}
+            description1={card.description1}
+            descrImg={card.descrImg?.src}
           />
         ))}
       </div>

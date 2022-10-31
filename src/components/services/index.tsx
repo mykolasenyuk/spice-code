@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import { FC, ReactNode, useState } from 'react'
 import { useDispatch } from 'react-redux'
-import globe from '../../../public/images/globe1.png'
+import globe from '../../../public/images/servicesImg.png'
 import { serviceList } from '../../data'
 import { changeDarkModeStatus } from '../../redux/darkModeSlice'
 import Modal from '../modal'

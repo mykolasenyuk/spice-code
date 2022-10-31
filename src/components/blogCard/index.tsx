@@ -9,9 +9,21 @@ interface Props {
   imgAlt: string
   title: string
   info: string
+  description1?: string
+  descrImg?: string
 }
 
-const BlogCard: FC<Props> = ({ imgSrc, imgAlt, title, info }) => {
+const BlogCard: FC<Props> = ({
+  imgSrc,
+  imgAlt,
+  title,
+  info,
+  description1,
+  descrImg,
+}) => {
+  const img = imgSrc.src
+  // const desImg = descrImg.src
+
   return (
     <div className={classes.card}>
       <Image className={classes.card__img} src={imgSrc} alt={imgAlt} />
@@ -21,7 +33,10 @@ const BlogCard: FC<Props> = ({ imgSrc, imgAlt, title, info }) => {
       >
         {info.length > 100 ? info.slice(0, 100).trim() + '...' : info}
       </p>
-      <AppLink href='/single-blog' query={{ imgAlt, title, info }}>
+      <AppLink
+        href='/single-blog'
+        query={{ img, imgAlt, title, info, description1, descrImg }}
+      >
         <div className={classes.backBtn}>
           <svg className={classes.svgBtn}>
             <use href={`/sprite.svg#icon-mail-arrow`} />

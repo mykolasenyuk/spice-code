@@ -1,7 +1,7 @@
 import { v4 as uuid } from 'uuid'
-import cardImg from '../../public/images/card.webp'
-import codeImg from '../../public/images/code-your-future.webp'
-import ballImg from '../../public/images/homeless.webp'
+import cardImg from '../../public/images/Contactless-donation-image.png'
+import alexPhoto from '../../public/images/Alex-story-image-1.png'
+import alexDescrImg from '../../public/images/Alex-story-image-2.png'
 import en from '../../public/languages/en'
 
 export const menuList = [
@@ -23,9 +23,9 @@ export const serviceList = [
     description: en.NFTandBlockchainDevelopment,
   },
   {
-    text: en.brandingAndVisualIdentity,
+    text: en.websiteProductPhotography,
     id: uuid(),
-    description: en.logosColoursTOVBrandGuidelines,
+    description: en.websiteProductDescription,
   },
   {
     text: en.websiteAudit,
@@ -38,23 +38,20 @@ export const serviceList = [
     description: en.fromPrintToAllThingsDigital,
   },
   {
-    text: en.motionGraphics,
+    text: en.consultancy,
     id: uuid(),
-    description: en.ifAStaticIsWorthAThousandWords,
-  },
-  {
-    text: en.solanaWithRUSTProgrammingLanguage,
-    id: uuid(),
-    description: en.solanaWithRUSTProgrammingLanguage,
+    description: en.consulnatcyDescription,
   },
 ]
 
 export const cardList = [
   {
-    title: en.codeYourFuture,
-    description: en.codeYourFutureInfo,
-    alt: 'Coding',
-    imgSrc: codeImg,
+    title: en.alexStory,
+    description: en.alexStoryDescr,
+    description1: en.alexStorydescr1,
+    alt: 'Alex story photo',
+    imgSrc: alexPhoto,
+    descrImg: alexDescrImg,
     id: uuid(),
   },
   {
@@ -64,13 +61,13 @@ export const cardList = [
     imgSrc: cardImg,
     id: uuid(),
   },
-  {
-    title: en.RefugeeUKguide,
-    description: en.contactlessHomelessDonationSecondInfo,
-    alt: 'Ball',
-    imgSrc: ballImg,
-    id: uuid(),
-  },
+  // {
+  //   title: en.RefugeeUKguide,
+  //   description: en.contactlessHomelessDonationSecondInfo,
+  //   alt: 'Ball',
+  //   imgSrc: ballImg,
+  //   id: uuid(),
+  // },
 ]
 
 export const pages = [
