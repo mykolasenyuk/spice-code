@@ -4,7 +4,7 @@ services:
   nginx:
     image: nginx:1.17.0
     restart: "${RESTART_TYPE}"
-    depends_on: 
+    depends_on:
       - app
     volumes:
       - "${NGINX_CONF_DIR}:/etc/nginx/conf.d"
@@ -17,6 +17,8 @@ services:
 
   app:
     build: ../
+    volumes:
+      - '../data:/app/data'
     restart: "${RESTART_TYPE}"
     networks:
       - server
