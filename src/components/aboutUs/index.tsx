@@ -19,7 +19,7 @@ const About = () => {
               {aboutUsDescriptions[1].description}
               <a
                 className={classes.socialLink}
-                href='https://dev.mendee.digital/services'
+                href='https://mendee.digital/services'
               >
                 here.
               </a>
@@ -35,7 +35,7 @@ const About = () => {
               {aboutUsDescriptions[3].description}
               <a
                 className={classes.socialLink}
-                href='https://dev.mendee.digital/contact-us'
+                href='https://mendee.digital/contact-us'
               >
                 here.
               </a>
