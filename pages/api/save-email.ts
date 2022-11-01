@@ -2,6 +2,8 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
 import fs from 'fs';
 
+const EMAILS_FILE_PATH = process.env.NODE_ENV === 'production' ? '/app/data/emails.txt' : 'data/emails.txt';
+
 type Data = {
   success: boolean
 }
@@ -28,7 +30,7 @@ const readFileByLine = async (filepath: string, onLine: Function) => {
 
 const isEmailAlreadySaved = async (email: string): Promise<boolean>  => {
   let emailAlreadySaved = false;
-  await readFileByLine('emails.txt', (line: string) => {
+  await readFileByLine(EMAILS_FILE_PATH, (line: string) => {
     emailAlreadySaved = line === email;
     return !emailAlreadySaved;
   });
@@ -46,7 +48,7 @@ const validateEmail = (email: string) => {
 const saveEmail = async (req: NextApiRequest) => {
   const email = extractEmail(req);
   if (validateEmail(email) && !await isEmailAlreadySaved(email)) {
-    fs.appendFileSync('emails.txt', `${email}\n`);
+    fs.appendFileSync(EMAILS_FILE_PATH, `${email}\n`);
     return true;
   }
   return false;
