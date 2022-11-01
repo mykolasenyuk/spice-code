@@ -1,9 +1,27 @@
 import Image from 'next/image'
+import { useState } from 'react'
 import cubes from '../../../public/images/3d rectangles cube.png'
 import en from '../../../public/languages/en'
 import classes from './styles.module.scss'
 
 const Contacts = () => {
+  const [email, setEmail] = useState('')
+
+  const handleChange = e => {
+    const { value } = e.currentTarget
+    setEmail(value)
+    console.log(email)
+  }
+
+  const handleSubmit = e => {
+    e.preventDefault()
+
+    reset()
+  }
+  const reset = () => {
+    setEmail('')
+  }
+
   return (
     <div className={classes.container}>
       <h1 className={classes.title}>{en.contactUs}</h1>
@@ -18,11 +36,13 @@ const Contacts = () => {
               <input
                 className={classes.input}
                 type='email'
+                value={email}
                 placeholder='hello@mendee.digital'
+                onChange={handleChange}
               />
 
               <div>
-                <svg className={classes.inputBtn}>
+                <svg className={classes.inputBtn} onClick={handleSubmit}>
                   <use href={`/sprite.svg#icon-mail-arrow`} />
                 </svg>
               </div>

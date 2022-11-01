@@ -1,4 +1,5 @@
 import { Head, Html, Main, NextScript } from 'next/document'
+import Script from 'next/script'
 
 const Document = () => {
   return (
@@ -12,6 +13,20 @@ const Document = () => {
           crossOrigin='anonymous'
           referrerPolicy='no-referrer'
         />
+        {/* <!-- Global site tag (gtag.js) - Google Analytics --> */}
+        <Script
+          src='https://www.googletagmanager.com/gtag/js?id=G-Y9MEX7RHSS'
+          strategy='afterInteractive'
+        />
+        <Script id='google-analytics' strategy='afterInteractive'>
+          {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){window.dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-Y9MEX7RHSS');
+        `}
+        </Script>
       </Head>
       <body style={{ overflowX: 'hidden' }}>
         <Main />
