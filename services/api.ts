@@ -1,7 +1,11 @@
 import axios from 'axios'
 
 export async function addEmail(email) {
-  const { data } = await axios.post('/api/save-email', email)
+  try {
+    const { data } = await axios.post('/api/save-email', email)
 
-  return data
+    return data
+  } catch (error) {
+    console.log(error)
+  }
 }
