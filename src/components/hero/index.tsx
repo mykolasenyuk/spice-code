@@ -1,4 +1,5 @@
 import { FC } from 'react'
+import { getPostById, getPosts } from '../../../services/api'
 import classes from './styles.module.scss'
 
 interface Props {
@@ -6,6 +7,9 @@ interface Props {
   isHeaderListOpen: boolean
 }
 const Hero: FC<Props> = ({ bgColor, isHeaderListOpen }) => {
+  // const data = getPosts()
+  // const data1 = getPostById('12tr2h3ft21')
+  // console.log(data1)
   return (
     <div className={classes.container}>
       <h1 className={bgColor !== 'dark' ? classes.title1 : classes.titleDark}>

@@ -4,11 +4,39 @@ import classes from './styles.module.scss'
 import { Sprite } from '../sprite'
 import { AppLink } from '../appLink'
 import { useRouter } from 'next/router'
+import { useEffect, useState } from 'react'
+import { getPostById } from '../../../services/api'
+import { v4 } from 'uuid'
+
+interface IPost {
+  id: string
+  descrImg: string
+  title: string
+  info: string
+  description?: string[]
+  imgUrl?: string
+}
 
 const SingleBlogPage = () => {
+  const router = useRouter()
   const {
-    query: { img, imgAlt, title, info, descr1, descr2, descr3,  descrImg },
-  } = useRouter()
+    query: { id },
+  } = router
+  console.log('id', router.query)
+
+  const [post, setPost] = useState<IPost>()
+
+  useEffect(() => {
+    const getData = async () => {
+      try {
+        const data = await getPostById(id)
+        console.log(data)
+
+        setPost(data.post)
+      } catch (error) {}
+    }
+    getData()
+  }, [])
 
   return (
     <div className={classes['single-blog']}>
@@ -19,51 +47,50 @@ const SingleBlogPage = () => {
           </svg>
         </div>
       </AppLink>
-      <div className={classes['single-blog__container']}>
-        <h2
-          className={`${classes['single-blog__title']} ${classes['single-blog__title_phone']}`}
-        >
-          {title || en.alexStory.toLowerCase()}
-        </h2>
-        <div className={classes['single-blog__img']}>
-          <Image
-            className={classes['single-blog__img-container']}
-            alt='desc'
-            src={img as string}
-            width={640}
-            height={330}
-          />
+      {post ? (
+        <div className={classes['single-blog__container']}>
+          <h2
+            className={`${classes['single-blog__title']} ${classes['single-blog__title_phone']}`}
+          >
+            {post.title}
+          </h2>
+          <div className={classes['single-blog__img']}>
+            {post.descrImg && (
+              <Image
+                className={classes['single-blog__img-container']}
+                alt='descImg'
+                src={post.imgUrl as string}
+                width={640}
+                height={330}
+              />
+            )}
+          </div>
+          <h2
+            className={`${classes['single-blog__title']} ${classes['single-blog__title_laptop']}`}
+          >
+            {post.title}
+          </h2>
+          <p className={classes['single-blog__description']}>{post.info}</p>
+          <div>
+            {post.descrImg && (
+              <Image
+                alt='descImg'
+                src={post.descrImg as string}
+                width={640}
+                height={330}
+              />
+            )}
+          </div>
+          {post.description &&
+            post.description.map(descr => (
+              <p key={v4()} className={classes['single-blog__description2']}>
+                {descr}
+              </p>
+            ))}
         </div>
-        <h2
-          className={`${classes['single-blog__title']} ${classes['single-blog__title_laptop']}`}
-        >
-          {title || en.alexStory.toLowerCase()}
-        </h2>
-        <p className={classes['single-blog__description']}>
-          {info || en.alexStoryDescr}
-        </p>
-        <div>
-          {descrImg && (
-            <Image
-              // className={classes['single-blog__img-container']}
-              alt='descImg'
-              src={descrImg as string}
-              width={640}
-              height={330}
-            />
-          )}
-        </div>
-
-        {descr1 && (
-          <p className={classes['single-blog__description2']}>{descr1}</p>
-        )}
-        {descr2 && (
-          <p className={classes['single-blog__description2']}>{descr2}</p>
-        )}
-        {descr3 && (
-          <p className={classes['single-blog__description2']}>{descr3}</p>
-        )}
-      </div>
+      ) : (
+        ''
+      )}
     </div>
   )
 }
