@@ -3,7 +3,7 @@ import classes from './styles.module.scss'
 import { AppLink } from '../appLink'
 import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
-import { getPostById, loadPostContent } from '../../../services/api'
+import { getPostById } from '../../../services/api'
 import { v4 } from 'uuid'
 
 interface IPost {
@@ -25,13 +25,7 @@ const SingleBlogPage = () => {
   const [post, setPost] = useState<IPost>()
 
   useEffect(() => {
-    getPostById(id)
-        .then(async (postFromApi) => {
-          if (!postFromApi) {
-            return
-          }
-          setPost(postFromApi)
-        });
+    getPostById(id).then(setPost);
   }, [id])
 
   return (
