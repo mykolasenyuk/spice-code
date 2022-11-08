@@ -19,13 +19,5 @@ export async function getPosts() {
 }
 
 export async function getPostById(postId) {
-  try {
-    const post = await axios
-      .get(`/api/get-posts/${postId}`)
-      .then(({ data }) => data)
-
-    return post
-  } catch (error) {
-    console.log(error)
-  }
+  return (await axios.get(`/api/get-posts/${postId}`))?.data?.post
 }

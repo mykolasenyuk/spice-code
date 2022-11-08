@@ -31,7 +31,7 @@ const BlogCard: FC<Props> = ({ id, imgSrc, title, info }) => {
       >
         {info.length > 100 ? info.slice(0, 100).trim() + '...' : info}
       </p>
-      <AppLink href='/single-blog' query={{ id }}>
+      <AppLink href={ `/blog/${id}` }>
         <div className={classes.backBtn}>
           <svg className={classes.svgBtn}>
             <use href={`/sprite.svg#icon-mail-arrow`} />

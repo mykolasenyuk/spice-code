@@ -1,11 +1,9 @@
 import Image from 'next/image'
-import en from '../../../public/languages/en'
 import classes from './styles.module.scss'
-import { Sprite } from '../sprite'
 import { AppLink } from '../appLink'
 import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
-import { getPostById } from '../../../services/api'
+import { getPostById, loadPostContent } from '../../../services/api'
 import { v4 } from 'uuid'
 
 interface IPost {
@@ -15,28 +13,26 @@ interface IPost {
   info: string
   description?: string[]
   imgUrl?: string
+  contentHtmlUrl?: string
 }
 
 const SingleBlogPage = () => {
   const router = useRouter()
   const {
-    query: { id },
+    query: { slug: id },
   } = router
-  console.log('id', router.query)
 
   const [post, setPost] = useState<IPost>()
 
   useEffect(() => {
-    const getData = async () => {
-      try {
-        const data = await getPostById(id)
-        console.log(data)
-
-        setPost(data.post)
-      } catch (error) {}
-    }
-    getData()
-  }, [])
+    getPostById(id)
+        .then(async (postFromApi) => {
+          if (!postFromApi) {
+            return
+          }
+          setPost(postFromApi)
+        });
+  }, [id])
 
   return (
     <div className={classes['single-blog']}>

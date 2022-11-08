@@ -1,7 +1,7 @@
 {
   "posts": [
     {
-      "id": "12tr2h3ft21",
+      "id": "alex-story-founder-at-mendee-digital",
       "title": "Alex`s story (founder at MENDEE.DIGITAL)",
       "info": "When war broke out in Ukraine, education and training was interrupted, and a lot of talent was displaced when many Ukrainians were forced to seek safety abroad.One of my Ukrainian friends was caught up in all the chaos. He was setting out on a career in web development, and had just participated in an online bootcamp when he became a refugee, putting his life and ambitions on hold.",
       "imgUrl": "/images/Alex-story-image-1.png",
@@ -13,10 +13,11 @@
       ]
     },
     {
-      "id": "12tr2343h3ft23",
+      "id": "contactless-homeless-donation",
       "title": "Contactless Homeless Donation",
       "info": "We are working on a project where people can easily donate to homeless people via online payment. And not just money, but essentials, gift vouchers etc.",
-      "imgUrl": "/images/Contactless-donation-image.png"
+      "imgUrl": "/images/Contactless-donation-image.png",
+      "contentUrl": "/posts/contactless-homeless-donation.html"
     }
   ]
 }

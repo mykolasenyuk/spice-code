@@ -9,8 +9,6 @@ export default async function handler(req, res) {
   const post = data.posts.find(post => post.id === postId)
 
   res.json({
-    status: '✔️ Success',
-    code: 200,
     post,
   })
 }
