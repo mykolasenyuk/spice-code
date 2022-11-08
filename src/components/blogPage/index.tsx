@@ -1,25 +1,33 @@
+import { useEffect, useState } from 'react'
 import en from '../../../public/languages/en'
-import { cardList } from '../../data'
+import { getPosts } from '../../../services/api'
 import BlogCard from '../blogCard'
 import classes from './styles.module.scss'
 
 const BlogPage = () => {
+  const [posts, setPosts] = useState([])
+  useEffect(() => {
+    const getData = async () => {
+      try {
+        const data = await getPosts()
+        setPosts(data)
+      } catch (error) {}
+    }
+    getData()
+  }, [])
+
   return (
     <div className={classes.blog}>
       <h1 className={classes.blog__title}>{en.socialImpactInitiatives}</h1>
       <p className={classes.blog__description}>{en.blogDescription}</p>
       <div className={classes.blog__cards}>
-        {cardList.map(card => (
+        {posts.map(card => (
           <BlogCard
             key={card.id}
-            imgSrc={card.imgSrc}
-            imgAlt={card.alt}
-            info={card.description}
+            imgSrc={card.imgUrl}
+            info={card.info}
             title={card.title}
-            descr1={card.descr1}
-            descr2={card.descr2}
-            descr3={card.descr3}
-            descrImg={card.descrImg?.src}
+            id={card.id}
           />
         ))}
       </div>

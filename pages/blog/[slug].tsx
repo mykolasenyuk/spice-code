@@ -1,5 +1,5 @@
-import PageWrapper from '../src/components/pageWrapper'
-import SingleBlogPage from '../src/components/singleBlogPage'
+import PageWrapper from '@/components/pageWrapper'
+import SingleBlogPage from '@/components/singleBlogPage'
 
 const SingleBlog = () => {
   return (
