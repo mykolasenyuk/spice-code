@@ -7,15 +7,7 @@ export async function addEmail(email) {
 }
 
 export async function getPosts() {
-  try {
-    const posts = await axios
-      .get('/api/get-posts')
-      .then(({ data }) => data.data.posts)
-    return posts
-    // console.log(data)
-  } catch (error) {
-    console.error(error)
-  }
+  return (await axios.get('/api/get-posts'))?.data?.data?.posts
 }
 
 export async function getPostById(postId) {

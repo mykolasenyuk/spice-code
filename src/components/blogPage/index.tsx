@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react'
 import en from '../../../public/languages/en'
 import { getPosts } from '../../../services/api'
-import { cardList } from '../../data'
 import BlogCard from '../blogCard'
 import classes from './styles.module.scss'
 

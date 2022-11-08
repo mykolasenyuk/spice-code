@@ -25,7 +25,7 @@ const SingleBlogPage = () => {
   const [post, setPost] = useState<IPost>()
 
   useEffect(() => {
-    getPostById(id).then(setPost);
+    getPostById(id).then(setPost)
   }, [id])
 
   return (
@@ -45,7 +45,7 @@ const SingleBlogPage = () => {
             {post.title}
           </h2>
           <div className={classes['single-blog__img']}>
-            {post.descrImg && (
+            {post.imgUrl && (
               <Image
                 className={classes['single-blog__img-container']}
                 alt='descImg'

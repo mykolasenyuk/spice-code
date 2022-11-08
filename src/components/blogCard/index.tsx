@@ -9,10 +9,6 @@ interface Props {
   imgSrc: StaticImageData
   title: string
   info: string
-  descr1?: string
-  descr2?: string
-  descr3?: string
-  descrImg?: string
 }
 
 const BlogCard: FC<Props> = ({ id, imgSrc, title, info }) => {
@@ -31,7 +27,7 @@ const BlogCard: FC<Props> = ({ id, imgSrc, title, info }) => {
       >
         {info.length > 100 ? info.slice(0, 100).trim() + '...' : info}
       </p>
-      <AppLink href={ `/blog/${id}` }>
+      <AppLink href={`/blog/${id}`}>
         <div className={classes.backBtn}>
           <svg className={classes.svgBtn}>
             <use href={`/sprite.svg#icon-mail-arrow`} />
