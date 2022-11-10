@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import { useState } from 'react'
-import cubes from '../../../public/images/3d rectangles cube.png'
+import cubes from '../../../public/images/3drectangles.webp'
 import en from '../../../public/languages/en'
 import { addEmail } from '../../../services/api'
 import classes from './styles.module.scss'
