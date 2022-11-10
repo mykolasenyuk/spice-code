@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import globe from '../../../public/images/aboutUsImg.png'
+import globe from '../../../public/images/aboutUsImg.webp'
 import { aboutUsDescriptions } from '../../data'
 import classes from './styles.module.scss'
 
