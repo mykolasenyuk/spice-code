@@ -56,7 +56,6 @@ const About = () => {
                 alt='about us picture'
               />
             </picture>
-
             {/* <Image
               className={classes.image}
               width={500}

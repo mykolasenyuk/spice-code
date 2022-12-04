@@ -58,15 +58,11 @@ const SingleBlogPage = () => {
                   className={classes.image}
                   srcSet={post.imgUrl}
                   type='image/webp'
-                  // width={640}
-                  // height={330}
                 />
                 <img
                   className={classes.image}
                   src={post.imgUrl}
                   alt={post.descrImg}
-                  // width={640}
-                  // height={330}
                 />
               </picture>
             )}
@@ -90,15 +86,11 @@ const SingleBlogPage = () => {
                   className={classes.image}
                   srcSet={post.descrImg}
                   type='image/webp'
-                  // width={640}
-                  // height={330}
                 />
                 <img
                   className={classes.image}
                   src={post.descrImg}
                   alt={post.descrImg}
-                  // width={640}
-                  // height={330}
                 />
               </picture>
             )}
