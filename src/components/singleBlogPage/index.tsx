@@ -46,13 +46,29 @@ const SingleBlogPage = () => {
           </h2>
           <div className={classes['single-blog__img']}>
             {post.imgUrl && (
-              <Image
-                className={classes['single-blog__img-container']}
-                alt='descImg'
-                src={post.imgUrl as string}
-                width={640}
-                height={330}
-              />
+              // <Image
+              //   className={classes['single-blog__img-container']}
+              //   alt='descImg'
+              //   src={post.imgUrl as string}
+              //   width={640}
+              //   height={330}
+              // />
+              <picture>
+                <source
+                  className={classes.image}
+                  srcSet={post.imgUrl}
+                  type='image/webp'
+                  // width={640}
+                  // height={330}
+                />
+                <img
+                  className={classes.image}
+                  src={post.imgUrl}
+                  alt={post.descrImg}
+                  // width={640}
+                  // height={330}
+                />
+              </picture>
             )}
           </div>
           <h2
@@ -63,12 +79,28 @@ const SingleBlogPage = () => {
           <p className={classes['single-blog__description']}>{post.info}</p>
           <div>
             {post.descrImg && (
-              <Image
-                alt='descImg'
-                src={post.descrImg as string}
-                width={640}
-                height={330}
-              />
+              // <Image
+              //   alt='descImg'
+              //   src={post.descrImg as string}
+              //   width={640}
+              //   height={330}
+              // />
+              <picture>
+                <source
+                  className={classes.image}
+                  srcSet={post.descrImg}
+                  type='image/webp'
+                  // width={640}
+                  // height={330}
+                />
+                <img
+                  className={classes.image}
+                  src={post.descrImg}
+                  alt={post.descrImg}
+                  // width={640}
+                  // height={330}
+                />
+              </picture>
             )}
           </div>
           {post.description &&

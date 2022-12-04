@@ -36,7 +36,19 @@ const OurServices: FC<Props> = ({ children }) => {
         <h1 className={classes.title}>Services</h1>
         <div className={classes.imageContainer}>
           <div className={classes.imageWrapper}>
-            <Image src={globe} alt='cubes' />
+            {/* <Image src={globe} alt='cubes' /> */}
+            <picture>
+              <source
+                className={classes.image}
+                srcSet='/images/servicesImg.webp'
+                type='image/webp'
+              />
+              <img
+                className={classes.image}
+                src='/images/servicesImg.webp'
+                alt='cubes'
+              />
+            </picture>
           </div>
         </div>
 

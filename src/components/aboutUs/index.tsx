@@ -44,13 +44,26 @@ const About = () => {
         </ul>
         <div className={classes.rightSide}>
           <div className={classes.imageContainer}>
-            <Image
+            <picture>
+              <source
+                className={classes.image}
+                srcSet='images/aboutUsImg.webp'
+                type='image/webp'
+              />
+              <img
+                className={classes.image}
+                src='/images/aboutUsImg.webp'
+                alt='about us picture'
+              />
+            </picture>
+
+            {/* <Image
               className={classes.image}
               width={500}
               height={500}
               src={globe}
               alt='about us picture'
-            />
+            /> */}
           </div>
         </div>
       </div>

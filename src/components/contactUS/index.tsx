@@ -95,7 +95,19 @@ const Contacts = () => {
         </li>
       </ul>
       <div className={classes.imageContainer}>
-        <Image className={classes.image} src={cubes} alt='cubes' />
+        {/* <Image className={classes.image} src={cubes} alt='cubes' /> */}
+        <picture>
+          <source
+            className={classes.image}
+            srcSet='/images/3drectangles.webp'
+            type='image/webp'
+          />
+          <img
+            className={classes.image}
+            src='/images/3drectangles.webp'
+            alt='contact us picture'
+          />
+        </picture>
       </div>
     </div>
   )

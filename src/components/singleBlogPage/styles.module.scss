@@ -38,13 +38,13 @@
   }
 
   &__img {
-    // display: flex;
-    // justify-content: center;
+    display: flex;
+    justify-content: center;
 
-    // &-content {
-    //   max-width: 100%;
-    //   height: 100%;
-    // }
+    &-content {
+      max-width: 100%;
+      height: 100%;
+    }
   }
 
   &__title {
@@ -104,6 +104,10 @@
     animation: rotate-scale 0.65s linear both;
     fill: #ffa837;
   }
+}
+.image {
+  width: 100%;
+  height: 100%;
 }
 
 @keyframes rotate-scale {
