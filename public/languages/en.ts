@@ -1,11 +1,12 @@
 const en = {
   footerBigText:
-    'From UX/UI to blockchain projects, our focus is on building the right product for our clients. We partner with both startups and experienced enterprises to help them take their product ideas to the next level.',
+    'A digital product studio founded by a refugee, empowering individuals with lived experience to create digital opportunities. Balancing profit & societal impact, fostering cooperation, respect, and supporting non-profits in their digital journeys.',
   socialMedia: 'Social Media',
   linkedin: 'linkedin',
   instagram: 'instagram',
   getAQuote: 'Get a quote',
   mendeeEmail: 'Hello@mendee.digital',
+  mendeeTwitter: 'twitter',
   mendeePhoneNumber: '+44(0)77777777',
   mendeeDigital: 'Mendee.Digital',
   mainDescription: 'A web development studio with a social impact.',

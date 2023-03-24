@@ -16,7 +16,7 @@ const Hero: FC<Props> = ({ bgColor, isHeaderListOpen }) => {
         Mendee<span>.</span>Digital
       </h1>
       <h2 className={bgColor !== 'dark' ? classes.title2 : classes.titleDark}>
-        A Digital Product Studio Committed To Social Good.
+        Limitless opportunities for talented people.
       </h2>
     </div>
   )
