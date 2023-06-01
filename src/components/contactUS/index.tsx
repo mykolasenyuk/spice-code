@@ -1,9 +1,10 @@
 import Image from 'next/image'
-import { useState } from 'react'
+import React, { useState } from 'react'
 import cubes from '../../../public/images/3drectangles.webp'
 import en from '../../../public/languages/en'
 import { addEmail } from '../../../services/api'
 import classes from './styles.module.scss'
+import styles from '@/components/footer/styles.module.scss'
 
 const Contacts = () => {
   const [email, setEmail] = useState('')
@@ -58,8 +59,7 @@ const Contacts = () => {
               <a
                 className={classes.socialLink}
                 target='blank'
-                href='https://www.linkedin.com/company/mendee/'
-              >
+                href='https://www.linkedin.com/company/mendee/'>
                 {en.linkedin}
               </a>
             </li>
@@ -67,9 +67,16 @@ const Contacts = () => {
               <a
                 className={classes.socialLink}
                 target='blank'
-                href='https://www.instagram.com/mendee_digital/'
-              >
+                href='https://www.instagram.com/mendee_digital/'>
                 {en.instagram}
+              </a>
+            </li>
+            <li className={classes.socialLink}>
+              <a
+                className={classes.socialLink}
+                target='blank'
+                href='https://twitter.com/mendee_digital'>
+                {en.mendeeTwitter}
               </a>
             </li>
           </ul>
@@ -81,8 +88,7 @@ const Contacts = () => {
               <a
                 className={classes.socialLink}
                 target='blank'
-                href='mailto:hello@mendee.digital'
-              >
+                href='mailto:hello@mendee.digital'>
                 {en.mendeeEmail}
               </a>
             </li>

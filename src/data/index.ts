@@ -2,6 +2,7 @@ import { v4 as uuid } from 'uuid'
 import cardImg from '../../public/images/Contactless-donation-image.png'
 import alexPhoto from '../../public/images/Alex-story-image-1.png'
 import alexDescrImg from '../../public/images/Alex-story-image-2.png'
+import siBot from '../../public/images/SiBot.webp'
 import en from '../../public/languages/en'
 
 export const menuList = [
@@ -13,34 +14,34 @@ export const menuList = [
 
 export const serviceList = [
   {
-    text: en.websiteDesignAndCode,
+    text: en.nonProfitDigitalSupport,
     id: uuid(),
     description: en.weLoveGoodDesignAndCode,
   },
   {
-    text: en.NFTAndBlockchainDevelopment,
+    text: en.ChatbotsAIBasedSolutions,
     id: uuid(),
-    description: en.NFTandBlockchainDevelopment,
+    description: en.ChatbotsAIBasedSolution,
   },
   {
-    text: en.websiteProductPhotography,
+    text: en.BespokeWebMobileAppDevelopment,
     id: uuid(),
-    description: en.websiteProductDescription,
+    description: en.BespokeWebMobileAppDevelopmentDes,
   },
   {
-    text: en.websiteAudit,
+    text: en.UIUXDesignServices,
     id: uuid(),
-    description: en.weWillLocateYourProblemsAndFindSolutions,
+    description: en.UIUXDesign,
   },
   {
-    text: en.graphicDesign,
+    text: en.CommercialSustainableStartUpSupport,
     id: uuid(),
-    description: en.fromPrintToAllThingsDigital,
+    description: en.CommercialSustainableStartUpSupportDes,
   },
   {
-    text: en.consultancy,
+    text: en.systemAdministrationInfrastructureSupport,
     id: uuid(),
-    description: en.consulnatcyDescription,
+    description: en.systemAdministrationInfrastructureSupportDes,
   },
 ]
 
@@ -57,12 +58,25 @@ export const cardList = [
     id: uuid(),
   },
   {
-    title: en.contactlessHomelessDonation,
-    description: en.contactlessHomelessDonationFirstInfo,
-    alt: 'Card',
-    imgSrc: cardImg,
     id: uuid(),
+    title: en.siBot,
+    description: en.siBotDescr1,
+    description2: en.siBotDescr2,
+    description3: en.siBotDescr3,
+    description4: en.siBotDescr4,
+    description5: en.siBotDescr5,
+    description6: en.siBotDescr6,
+    description7: en.siBotDescr7,
+    alt: 'siBot',
+    imgSrc: siBot,
   },
+  // {
+  //   title: en.contactlessHomelessDonation,
+  //   description: en.contactlessHomelessDonationFirstInfo,
+  //   alt: 'Card',
+  //   imgSrc: cardImg,
+  //   id: uuid(),
+  // },
   // {
   //   title: en.RefugeeUKguide,
   //   description: en.contactlessHomelessDonationSecondInfo,
@@ -89,5 +103,11 @@ export const aboutUsDescriptions = [
   { id: uuid(), description: en.aboutUsFirst },
   { id: uuid(), description: en.aboutUsSecond },
   { id: uuid(), description: en.aboutUsThird },
-  { id: uuid(), description: en.aboutUsFourth },
+  { id: uuid(), description: en.aboutUsFifth },
+  { id: uuid(), description: en.aboutUsSixth },
+  { id: uuid(), description: en.aboutUsSeventh },
 ]
+export const aboutUsDescriptionWithSub = {
+  id: uuid(),
+  item: en.aboutUsFourth,
+}
