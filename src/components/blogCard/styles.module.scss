@@ -37,7 +37,7 @@
     margin: 16px 0;
 
     @media (min-width: $xl) {
-      height: 76px;
+      min-height: 80px;
       font-size: 32px;
       line-height: 38.4px;
     }

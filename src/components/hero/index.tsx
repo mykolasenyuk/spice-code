@@ -13,10 +13,10 @@ const Hero: FC<Props> = ({ bgColor, isHeaderListOpen }) => {
   return (
     <div className={classes.container}>
       <h1 className={bgColor !== 'dark' ? classes.title1 : classes.titleDark}>
-        Mendee<span>.</span>Digital
+        Mendee<span>.</span>
       </h1>
       <h2 className={bgColor !== 'dark' ? classes.title2 : classes.titleDark}>
-        Limitless opportunities for talented people.
+        Your Nonprofit Digital Studio.
       </h2>
     </div>
   )

@@ -10,14 +10,24 @@
         "I`ve experienced disruption in my life, and been forced to start a new career in a new home. So I struck on the idea that the best way I could help people like my friend, as well as other refugees and disadvantaged people with growing skills in web development and design, was by harnessing my connections and contacts in the UK to help unleash their potential – and Mendee.Digital was born.",
         "Starting out with web development and design can be intimidating enough without the added stresses of war and turbulence, so at Mendee.Digital we’re aiming to partner with CodeYourFuture, a non-profit with similar goals. Together we`ll establish an accessible and reliable base for refugees and asylum seekers to refine their skills as junior developers and designers, as well as create employment opportunities in Africa and South America.",
         "By directing profits from work with business in Europe and America towards social projects like sorely needed technology to help homeless people collect contactless donations, as well as developing IT tools for charity and other social enterprises, Mendee.Digital will help our alumni get back on their feet, build strong commercial and social portfolios, and help create the next generation of socially minded tech entrepreneurs!"
-      ]
+      ],
+      "contentUrl": "/posts/alex-story-founder-at-mendee-digital.html"
     },
     {
-      "id": "contactless-homeless-donation",
-      "title": "Contactless Homeless Donation",
-      "info": "We are working on a project where people can easily donate to homeless people via online payment. And not just money, but essentials, gift vouchers etc.",
-      "imgUrl": "/images/Contactless-donation-image.webp",
-      "contentUrl": "/posts/contactless-homeless-donation.html"
+      "id": "siBot",
+      "title": "SiBot - Social Impact Bot: Making Information Accessible for Non-profit Organisations",
+      "info": "In the age of globalisation, non-profit organisations face a unique set of challenges. Chief among them is making their content accessible to diverse audiences, especially those who do not speak English. To address this, we present SiBot, our innovative Social Impact Bot designed specifically for multi-lingual engagement.",
+      "imgUrl": "/images/SiBot.webp",
+      "description": [
+        "SiBot, an AI-powered chatbot, has been created with the mission to bridge language barriers and make information universally understandable. This is particularly crucial for charities working with refugees, who often communicate in their native languages. With SiBot, we ensure that language does not become an obstacle to the crucial support these organisations provide.",
+        "Utilising advanced language processing algorithms, SiBot is capable of understanding and responding in over 50 languages. It provides real-time translation and localisation of your website content, ensuring that it's accessible and understandable to everyone, regardless of their linguistic background.",
+        "However, SiBot is more than just a language translator. It is a tool designed to enhance user experience and foster a deeper connection between your organization and its audience. SiBot can answer frequently asked questions, guide users through processes on your website, and provide personalised assistance. It is there to facilitate and enrich user interaction at every turn.",
+        "Moreover, SiBot is designed for easy integration with your existing website. Our team of experts will guide you through the setup process, ensuring a seamless deployment that aligns perfectly with your specific needs. By incorporating SiBot, you can reach out to new demographics, expand your audience base, and open up new opportunities for growth and engagement.",
+        "A growing list of non-profit organisations has already experienced the power of SiBot. They've seen improved user engagement, heightened customer satisfaction, and a more inclusive online presence. SiBot's impact reaches across various sectors, facilitating effective communication and fostering a more inclusive online environment.",
+        "Are you ready to make your website's content universally accessible and connect more deeply with your audience? Reach out to us today to learn more about SiBot. Together, we can ensure that language is not a barrier but a bridge to meaningful connections, enabling you to provide your crucial services to all who need them."
+      ],
+      "contentUrl": "/posts/siBot.html"
+
     }
   ]
 }

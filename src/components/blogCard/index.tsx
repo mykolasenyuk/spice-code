@@ -21,11 +21,12 @@ const BlogCard: FC<Props> = ({ id, imgSrc, title, info }) => {
         width={316}
         height={200}
       />
-      <h3 className={classes.card__title}>{title}</h3>
+      <h3 className={classes.card__title}>
+        {title.length > 40 ? title.slice(0, 40).trim() + '...' : title}
+      </h3>
       <p
-        className={`${blogPageClasses.blog__description} ${classes.card__description}`}
-      >
-        {info.length > 100 ? info.slice(0, 100).trim() + '...' : info}
+        className={`${blogPageClasses.blog__description} ${classes.card__description}`}>
+        {info.length > 120 ? info.slice(0, 120).trim() + '...' : info}
       </p>
       <AppLink href={`/blog/${id}`}>
         <div className={classes.backBtn}>
