@@ -1,5 +1,5 @@
 const en = {
-  footerBigText:
+  aboutUsFirst:
     'We`re digital studio specializing in creative problem-solving, development, and UX/UI design.Balancing profit & societal impact, fostering cooperation, respect, and supporting non-profits in their digital journeys.',
   socialMedia: 'Social',
   linkedin: 'linkedin',
@@ -16,12 +16,11 @@ const en = {
   services: 'services',
   contactUs: 'contact us',
   blog: 'initiatives',
-  aboutUsFirst:
-    'Mendee.Digital is a digital product studio driven by a vision, mission, and core values designed to transform society with innovative digital solutions.',
+
   aboutUsSecond:
-    'Mendee.Digital envisions a world where individuals with lived experiences are at the forefront of designing and creating digital opportunities.',
+    'SpiceCode.Solution is driven by a vision where individuals with diverse experiences lead the way in designing and shaping digital opportunities. At the heart of our mission is the belief that innovation thrives in an environment fueled by joy, collaboration, and shared passion. That’s why we’ve built a team of dedicated professionals who are committed to creating exceptional digital solutions.',
   aboutUsThird:
-    'Our mission is to provide limitless opportunities for talented individuals. We aim to transform society with digital solutions that are designed and created by individuals with lived experiences.',
+    'We specialize in delivering high-quality mobile applications and websites, designed to help our clients reach their business goals and maximize profitability. At SpiceCode, we are not just developers; we are partners in our clients\' success.',
   aboutUsFourth: [
     {
       title: '- Societal Benefit Balance',
@@ -41,10 +40,10 @@ const en = {
   subscribe: 'subscribe for monthly newsletter',
   nonProfitDigitalSupport: 'Non-profit Digital Support',
   UIUXDesignServices: 'UI/UX Design Services',
-  BespokeWebMobileAppDevelopment: 'Bespoke Web & Mobile App Development',
-  ChatbotsAIBasedSolutions: 'Chatbots & AI-based Solutions-Discover SiBot',
+  BespokeWebMobileAppDevelopment: 'Web & Mobile App Development',
+  ChatbotsAIBasedSolutions: 'Chatbots',
   systemAdministrationInfrastructureSupportDes:
-    'We offer a variety of systems and infrastructure support services that help organizations optimize their IT operations. Our experienced team assists with server configuration, ongoing maintenance, and troubleshooting, ensuring a reliable and secure environment for your digital assets. Our comprehensive solutions streamline processes, improve performance, and allow you to focus on your core mission.',
+    'Providing expert system administration and robust infrastructure support to ensure smooth and efficient operations for your IT environment',
   CommercialSustainableStartUpSupport:
     'Commercial & Sustainable Start-up Support',
   motionGraphics: 'Motion Graphics',
@@ -69,15 +68,16 @@ const en = {
   weLoveGoodDesignAndCode:
     'Our team collaborates with organizations to enhance their digital capabilities. We offer services such as website design, digital fundraising strategies, and online outreach campaigns that are tailored to meet the specific needs of non-profit organizations.',
   UIUXDesign:
-    'We create intuitive and user-friendly interfaces for a wide range of clients, including non-profits and businesses. Our primary focus is on user experience, ensuring seamless interaction with digital products and improved engagement with the target audience. This results in higher user satisfaction and conversion rates.',
+    'Produce high-quality, intuitive and user-friendly interfaces for a wide range of clients. Our primary focus is on user experience.',
   BespokeWebMobileAppDevelopmentDes:
-    'We design and construct tailor-made web and mobile applications for both non-profit and commercial clients, addressing their unique needs and challenges while enhancing their digital prowess. Our team of skilled developers guarantees the delivery of top-notch, scalable, and secure solutions.',
+    'We provide end-to-end digital solutions, including website development and maintenance, as well as full-cycle mobile app creation',
   ChatbotsAIBasedSolution:
-    'We provide comprehensive digital solutions for commercial projects and sustainable start-ups, including eco-friendly, refugee-founded, and social enterprises. We offer tailored support ranging from website design and development of intricate MVPs to the construction of innovative digital products that align with their mission and goals. We partner with organizations to establish a robust online presence and ensure their success in the digital landscape.',
+    'We provide comprehensive digital solutions for commercial projects and sustainable start-ups, including building, creating, and maintaining  developing custom chatbots and AI-powered chatbot platforms to enhance customer engagement and streamline business operations.',
+
   systemAdministrationInfrastructureSupport:
-    'System Administration & Infrastructure Support',
+    'System administration',
   CommercialSustainableStartUpSupportDes:
-    'In need of supporting visuals for your digital product? Looking for something to make your marketing materials standout? Let us know!',
+    'Supporting both commercial and sustainable start-ups',
   ifAStaticIsWorthAThousandWords:
     'If a static is worth a thousand words, a motion is worth a million.',
   siBot:

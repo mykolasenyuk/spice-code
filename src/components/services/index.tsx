@@ -1,11 +1,8 @@
-import Image from 'next/image'
 import { FC, ReactNode, useState } from 'react'
 import { useDispatch } from 'react-redux'
-import globe from '../../../public/images/servicesImg.webp'
 import { serviceList } from '../../data'
 import { changeDarkModeStatus } from '../../redux/darkModeSlice'
 import Modal from '../modal'
-import { Sprite } from '../sprite'
 import classes from './styles.module.scss'
 
 interface Props {
@@ -40,12 +37,12 @@ const OurServices: FC<Props> = ({ children }) => {
             <picture>
               <source
                 className={classes.image}
-                srcSet='/images/servicesImg.webp'
+                srcSet='/images/services1.png'
                 type='image/webp'
               />
               <img
                 className={classes.image}
-                src='/images/servicesImg.webp'
+                src='/images/services1.png'
                 alt='cubes'
               />
             </picture>

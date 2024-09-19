@@ -14,11 +14,6 @@ export const menuList = [
 
 export const serviceList = [
   {
-    text: en.nonProfitDigitalSupport,
-    id: uuid(),
-    description: en.weLoveGoodDesignAndCode,
-  },
-  {
     text: en.ChatbotsAIBasedSolutions,
     id: uuid(),
     description: en.ChatbotsAIBasedSolution,
