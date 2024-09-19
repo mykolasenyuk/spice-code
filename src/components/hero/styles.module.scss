@@ -16,7 +16,8 @@
   font-size: 90px;
   font-weight: 700;
   margin: 0;
-  text-transform: lowercase;
+  color: #ffffff;
+  //text-transform: lowercase;
 
   @media screen and (max-width: 961px) {
     font-size: 48px;
@@ -28,13 +29,14 @@
 }
 
 .title1 span {
-  color: #ffa737;
+  color: #fae746;
 }
 
 .title2 {
-  font-size: 32px;
+  font-size: 34px;
   font-weight: 400;
   margin: 0;
+  color: #faed98;
 
   @media screen and (max-width: 961px) {
     font-size: 24px;

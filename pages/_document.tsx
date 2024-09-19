@@ -4,7 +4,7 @@ import Script from 'next/script'
 const Document = () => {
   return (
     <Html>
-      <title>Mendee.Digital</title>
+      <title>SpiceCode.Solution</title>
       <Head>
         <link
           rel='stylesheet'

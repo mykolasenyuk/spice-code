@@ -5,7 +5,6 @@ import classes from './styles.module.scss'
 
 interface Props {
   children: ReactNode
-  
 }
 
 const Background: FC<Props> = ({ children }) => {

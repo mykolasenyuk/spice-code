@@ -13,9 +13,11 @@
   height: 100vh;
   overflow: hidden;
   transition: 350ms cubic-bezier(0.4, 0, 0.2, 1);
-  background: linear-gradient(270deg, #f9d8ad, #f6e9df, #afb5c8);
+  background: linear-gradient(270deg, #1f1fa4, #8045a9, #a9a450);
   background-size: 600% 600%;
 
+  //background: url('/images/nodesLogo.png') no-repeat center center;
+  //background-size: cover;
   -webkit-animation: AnimationName 19s ease infinite;
   -moz-animation: AnimationName 19s ease infinite;
   animation: AnimationName 19s ease infinite;
@@ -84,7 +86,11 @@
   width: 80px;
   height: 80px;
   animation-delay: 0s;
-  background: rgba(255, 168, 55, 1);
+  //background: rgba(255, 168, 55, 1);
+  background: url('/images/chilli.png') no-repeat center center;
+
+  background-size: cover;
+
 }
 .circles li:nth-child(2) {
   left: 3%;
@@ -92,7 +98,9 @@
   height: 200px;
   animation-delay: 2s;
   animation-duration: 29s;
-  background: rgba(49, 65, 114, 1);
+  background: url('/images/nodesLogo.png') no-repeat center center;
+  background-size: cover;
+  //background: rgba(49, 65, 114, 1);
   @media screen and (min-width: 700px) {
     width: 232px;
     height: 232px;
@@ -104,7 +112,9 @@
   width: 86px;
   height: 86px;
   animation-delay: 11s;
-  background: rgba(49, 65, 114, 1);
+  background: url('/images/chilli.png') no-repeat center center;
+  background-size: cover;
+  //background: rgba(49, 65, 114, 1);
 }
 
 .circles li:nth-child(4) {
@@ -113,7 +123,9 @@
   height: 60px;
   animation-delay: 0s;
   animation-duration: 23s;
-  background: rgba(255, 255, 255, 1);
+  background: url('/images/nodesLogo.png') no-repeat center center;
+  background-size: cover;
+  //background: rgba(255, 255, 255, 1);
 }
 
 .circles li:nth-child(5) {
@@ -122,7 +134,9 @@
   height: 50px;
   animation-delay: 1s;
   animation-duration: 18s;
-  background: rgba(255, 255, 255, 1);
+  //background: rgba(255, 255, 255, 1);
+  background: url('/images/nodesLogo.png') no-repeat center center;
+  background-size: cover;
 }
 
 .circles li:nth-child(6) {
@@ -131,7 +145,9 @@
   height: 210px;
   animation-delay: 4s;
   animation-duration: 24s;
-  background: rgba(255, 255, 255, 1);
+  //background: rgba(255, 255, 255, 1);
+  background: url('/images/nodesLogo.png') no-repeat center center;
+  background-size: cover;
 }
 
 .circles li:nth-child(7) {
@@ -144,7 +160,9 @@
   height: 200px;
   animation-delay: 0s;
   animation-duration: 32s;
-  background: rgba(255, 168, 55, 1);
+  //background: rgba(255, 168, 55, 1);
+  background: url('/images/chilli.png') no-repeat center center;
+  background-size: cover;
 }
 
 .circles li:nth-child(8) {
@@ -153,6 +171,8 @@
   height: 25px;
   animation-delay: 15s;
   animation-duration: 45s;
+  background: url('/images/chilli.png') no-repeat center center;
+  background-size: cover;
 }
 
 .circles li:nth-child(9) {
@@ -161,6 +181,8 @@
   height: 35px;
   animation-delay: 2s;
   animation-duration: 40s;
+  background: url('/images/chilli.png') no-repeat center center;
+  background-size: cover;
 }
 
 .circles li:nth-child(10) {
@@ -169,6 +191,8 @@
   height: 150px;
   animation-delay: 0s;
   animation-duration: 21s;
+  background: url('/images/chilli.png') no-repeat center center;
+  background-size: cover;
 }
 .circles li:nth-child(11) {
   left: 15%;
@@ -176,6 +200,8 @@
   height: 40px;
   animation-delay: 3s;
   animation-duration: 21s;
+  background: url('/images/nodesLogo.png') no-repeat center center;
+  background-size: cover;
 }
 .circles li:nth-child(12) {
   left: 54%;
@@ -183,7 +209,9 @@
   height: 46px;
   animation-delay: 1s;
   animation-duration: 18s;
-  background: rgba(49, 65, 114, 1);
+  //background: rgba(49, 65, 114, 1);
+  background: url('/images/chilli.png') no-repeat center center;
+  background-size: cover;
 }
 
 @keyframes animate {
@@ -240,7 +268,7 @@
   left: 10%;
   width: 20px;
   height: 20px;
-  background: rgba(255, 168, 55, 1);
+  //background: rgba(255, 168, 55, 1);
   animation: animate 25s linear infinite;
   bottom: -450px;
 
@@ -252,7 +280,9 @@
   width: 80px;
   height: 80px;
   animation-delay: 0s;
-  background: rgba(255, 168, 55, 1);
+  background: url('/images/nodesLogo.png') no-repeat center center;
+  background-size: cover;
+  //background: rgba(255, 168, 55, 1);
 }
 .circlesDark li:nth-child(2) {
   left: 3%;
@@ -260,7 +290,9 @@
   height: 232px;
   animation-delay: 2s;
   animation-duration: 12s;
-  background: rgba(49, 65, 114, 1);
+  //background: rgba(49, 65, 114, 1);
+  background: url('/images/chilli.png') no-repeat center center;
+  background-size: cover;
 
   @media screen and (min-width: 700px) {
     width: 332px;
@@ -273,7 +305,9 @@
   width: 86px;
   height: 86px;
   animation-delay: 4s;
-  background: rgba(49, 65, 114, 1);
+  //background: rgba(49, 65, 114, 1);
+  background: url('/images/nodesLogo.png') no-repeat center center;
+  background-size: cover;
 }
 
 .circlesDark li:nth-child(4) {
@@ -282,8 +316,11 @@
   height: 60px;
   animation-delay: 0s;
   animation-duration: 18s;
-  background: rgba(255, 255, 255, 1);
+  //background: rgba(255, 255, 255, 1);
+  background: url('/images/chilli.png') no-repeat center center;
+  background-size: cover;
 }
+
 
 .circlesDark li:nth-child(5) {
   left: 65%;
@@ -291,7 +328,9 @@
   height: 50px;
   animation-delay: 1s;
   animation-duration: 13s;
-  background: rgba(255, 255, 255, 1);
+  //background: rgba(255, 255, 255, 1);
+  background: url('/images/nodesLogo.png') no-repeat center center;
+  background-size: cover;
 }
 
 .circlesDark li:nth-child(7) {
@@ -303,7 +342,9 @@
   width: 300px;
   height: 300px;
   animation-delay: 0s;
-  background: #ffa737;
+  //background: #ffa737;
+  background: url('/images/chilli.png') no-repeat center center;
+  background-size: cover;
 }
 
 .circlesDark li:nth-child(8) {
@@ -312,6 +353,8 @@
   height: 25px;
   animation-delay: 15s;
   animation-duration: 45s;
+  background: url('/images/chilli.png') no-repeat center center;
+  background-size: cover;
 }
 
 .circlesDark li:nth-child(9) {
@@ -320,6 +363,8 @@
   height: 35px;
   animation-delay: 2s;
   animation-duration: 35s;
+  background: url('/images/nodesLogo.png') no-repeat center center;
+  background-size: cover;
 }
 
 .circlesDark li:nth-child(10) {
@@ -328,6 +373,8 @@
   height: 250px;
   animation-delay: 0s;
   animation-duration: 11s;
+  background: url('/images/chilli.png') no-repeat center center;
+  background-size: cover;
 }
 .circlesDark li:nth-child(11) {
   left: 5%;
@@ -335,6 +382,8 @@
   height: 240px;
   animation-delay: 3s;
   animation-duration: 17s;
+  background: url('/images/nodesLogo.png') no-repeat center center;
+  background-size: cover;
 }
 .circlesDark li:nth-child(12) {
   left: 54%;
@@ -342,7 +391,9 @@
   height: 460px;
   animation-delay: 1s;
   animation-duration: 14s;
-  background: rgba(49, 65, 114, 1);
+  //background: rgba(49, 65, 114, 1);
+  background: url('/images/chilli.png') no-repeat center center;
+  background-size: cover;
 }
 
 ////=====LIGHT THEME=====////

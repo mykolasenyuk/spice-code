@@ -1,13 +1,15 @@
 const en = {
   footerBigText:
-    'A digital product studio founded by Indigenous Siberians, empowering individuals with lived experience to create digital opportunities. Balancing profit & societal impact, fostering cooperation, respect, and supporting non-profits in their digital journeys.',
-  socialMedia: 'Social Media',
+    'We`re digital studio specializing in creative problem-solving, development, and UX/UI design.Balancing profit & societal impact, fostering cooperation, respect, and supporting non-profits in their digital journeys.',
+  socialMedia: 'Social',
   linkedin: 'linkedin',
   instagram: 'instagram',
   getAQuote: 'Get a quote',
-  mendeeEmail: 'Hello@mendee.digital',
+  email: 'spicecode.solution@gmail.com',
   mendeeTwitter: 'twitter',
-  mendeePhoneNumber: '+44(0)77777777',
+  phoneNumber: '+380678872500',
+  phoneNumber1: '+447570944705',
+
   mendeeDigital: 'Mendee.Digital',
   mainDescription: 'A web development studio with a social impact.',
   aboutUs: 'about us',
