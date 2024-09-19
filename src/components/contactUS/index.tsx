@@ -89,7 +89,7 @@ const Contacts = () => {
                 className={classes.socialLink}
                 target='blank'
                 href='mailto:hello@mendee.digital'>
-                {en.mendeeEmail}
+                {en.email}
               </a>
             </li>
             {/* <li className={classes.socialLink}>
