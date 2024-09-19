@@ -11,14 +11,19 @@ const Hero: FC<Props> = ({ bgColor, isHeaderListOpen }) => {
   // const data1 = getPostById('12tr2h3ft21')
   // console.log(data1)
   return (
-    <div className={classes.container}>
-      <h1 className={bgColor !== 'dark' ? classes.title1 : classes.titleDark}>
-        Mendee<span>.</span>
-      </h1>
-      <h2 className={bgColor !== 'dark' ? classes.title2 : classes.titleDark}>
-        Your Nonprofit Digital Studio.
-      </h2>
-    </div>
+    <>
+      <div className={classes.container}>
+        <h1 className={bgColor !== 'dark' ? classes.title1 : classes.titleDark}>
+          SpiceCode<span>.</span>Solution
+        </h1>
+        <h2 className={bgColor !== 'dark' ? classes.title2 : classes.titleDark}>
+          Digital studio
+        </h2>
+        <h2 className={bgColor !== 'dark' ? classes.title2 : classes.titleDark}>
+          Make your`s ideas true
+        </h2>
+      </div>
+    </>
   )
 }
 

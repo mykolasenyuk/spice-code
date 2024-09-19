@@ -10,3 +10,18 @@
   z-index: 99;
   background: rgba(255, 255, 255, 0);
 }
+.logo{
+  display: flex;
+  align-items: center;
+  height: 40px;
+  justify-content: space-between;
+  width: 40px;
+  font-family: 'Gilroy', Courier, monospace;
+  color: #3385ee;
+  transition:  150ms ease-out 110ms;
+  &:hover,
+  :focus {
+    transform: scale(1.3);
+
+  }
+}
