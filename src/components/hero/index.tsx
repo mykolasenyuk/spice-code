@@ -20,7 +20,7 @@ const Hero: FC<Props> = ({ bgColor, isHeaderListOpen }) => {
           Digital studio
         </h2>
         <h2 className={bgColor !== 'dark' ? classes.title2 : classes.titleDark}>
-          Make your`s ideas true
+          Turning your ideas into reality
         </h2>
       </div>
     </>

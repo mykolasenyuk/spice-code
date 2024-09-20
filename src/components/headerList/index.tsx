@@ -30,7 +30,7 @@ const HeaderList = () => {
     }
 
     if (pathname === href) {
-      outputStyle.color = '#ffa837'
+      outputStyle.color = '#fae746'
     }
 
     return outputStyle

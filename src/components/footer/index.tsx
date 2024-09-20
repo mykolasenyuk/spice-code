@@ -79,7 +79,7 @@ const Footer = () => {
                   <use href={`/spiceSprite.svg#icon-send`} />
                 </svg>
                 {/*{en.email}*/}
-                spiceCode.email
+                <span className={styles.socialLink__span}>spiceCode.email</span>
               </a>
             </li>
             <li>
@@ -90,7 +90,9 @@ const Footer = () => {
                 <svg className={styles.socialLink__icon}>
                   <use href={`/spiceSprite.svg#icon-phone`} />
                 </svg>
-                {en.phoneNumber}
+                <span className={styles.socialLink__span}>{en.phoneNumber}</span>
+
+
               </a>
             </li>
           </ul>

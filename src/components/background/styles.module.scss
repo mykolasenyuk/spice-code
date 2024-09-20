@@ -13,7 +13,7 @@
   height: 100vh;
   overflow: hidden;
   transition: 350ms cubic-bezier(0.4, 0, 0.2, 1);
-  background: linear-gradient(270deg, #1f1fa4, #8045a9, #a9a450);
+  background: linear-gradient(270deg, #151591, #713b94, #888541);
   background-size: 600% 600%;
 
   //background: url('/images/nodesLogo.png') no-repeat center center;
@@ -74,7 +74,7 @@
   list-style: none;
   width: 20px;
   height: 20px;
-  background: rgba(255, 168, 55, 1);
+  //background: rgba(255, 168, 55, 1);
   animation: animate 25s linear infinite;
   bottom: -350px;
 

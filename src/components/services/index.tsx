@@ -37,12 +37,12 @@ const OurServices: FC<Props> = ({ children }) => {
             <picture>
               <source
                 className={classes.image}
-                srcSet='/images/services1.png'
+                srcSet='/images/services.png'
                 type='image/webp'
               />
               <img
                 className={classes.image}
-                src='/images/services1.png'
+                src='/images/services.png'
                 alt='cubes'
               />
             </picture>

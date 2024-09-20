@@ -20,7 +20,7 @@ const OpenSvg: FC<Props> = ({ svgTag, lineTag, className }) => (
       y1='1.5'
       x2='13.5'
       y2='24.5'
-      stroke='black'
+      stroke='white'
       strokeWidth='3'
       strokeLinecap='square'
       {...lineTag}
@@ -30,7 +30,7 @@ const OpenSvg: FC<Props> = ({ svgTag, lineTag, className }) => (
       y1='12.5'
       x2='24.5'
       y2='12.5'
-      stroke='black'
+      stroke='white'
       strokeWidth='3'
       strokeLinecap='square'
       {...lineTag}

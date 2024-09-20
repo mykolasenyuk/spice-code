@@ -15,13 +15,14 @@ const Header = () => {
     <header className={styles.header}>
       <AppLink href='/'>
         <div className={styles.logo}>
-          <Image src={'images/chilli.png'} width={36} height={36} />
+          <LogoSvg
+
+            svgTag={{ style: { cursor: 'pointer' } }}
+            pathTag={isDarkModeEnabled ? { fill: '#fff' } : {}}
+          />
         </div>
 
-        {/*<LogoSvg*/}
-        {/*  svgTag={{ style: { cursor: 'pointer' } }}*/}
-        {/*  pathTag={isDarkModeEnabled ? { fill: '#fff' } : {}}*/}
-        {/*/>*/}
+
       </AppLink>
       <HeaderList />
     </header>

@@ -38,7 +38,7 @@
       line-height: 57.6px;
       text-align: center !important;
       transition: $default-transition;
-      color: #202124;
+      color: #ffffff;
 
       @media (min-width: $md) {
         font-size: 26px;
@@ -57,7 +57,8 @@
       }
 
       &:hover {
-        color: #ffa837;
+        transform: scale(1.03);
+        color: #fae746;
       }
     }
   }
@@ -71,6 +72,7 @@
 
     & > svg {
       transition: $default-transition;
+
     }
 
     &_close {

@@ -9,7 +9,7 @@ export const menuList = [
   { text: en.aboutUs, id: uuid(), href: '/about-us' },
   { text: en.services, id: uuid(), href: '/services' },
   { text: en.contactUs, id: uuid(), href: '/contact-us' },
-  { text: en.blog, id: uuid(), href: '/blog' },
+  // { text: en.blog, id: uuid(), href: '/blog' },
 ]
 
 export const serviceList = [

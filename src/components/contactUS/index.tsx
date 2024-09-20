@@ -29,46 +29,44 @@ const Contacts = () => {
     <div className={classes.container}>
       <h1 className={classes.title}>{en.contactUs}</h1>
       <ul className={classes.contactsWrapper}>
-        <li>
-          <h3 className={classes.contactsTitle}>
-            Subscribe for <br />
-            monthly newsletter
-          </h3>
-          <div className={classes.socialInput}>
-            <form className={classes.inputForm}>
-              <input
-                className={classes.input}
-                type='email'
-                value={email}
-                placeholder='hello@mendee.digital'
-                onChange={handleChange}
-              />
+        {/*<li>*/}
+        {/*  <h3 className={classes.contactsTitle}>*/}
+        {/*    Subscribe for <br />*/}
+        {/*    monthly newsletter*/}
+        {/*  </h3>*/}
+        {/*  <div className={classes.socialInput}>*/}
+        {/*    <form className={classes.inputForm}>*/}
+        {/*      <input*/}
+        {/*        className={classes.input}*/}
+        {/*        type='email'*/}
+        {/*        value={email}*/}
+        {/*        placeholder='hello@mendee.digital'*/}
+        {/*        onChange={handleChange}*/}
+        {/*      />*/}
 
-              <div>
-                <svg className={classes.inputBtn} onClick={handleSubmit}>
-                  <use href={`/sprite.svg#icon-mail-arrow`} />
-                </svg>
-              </div>
-            </form>
-          </div>
-        </li>
+        {/*      <div>*/}
+        {/*        <svg className={classes.inputBtn} onClick={handleSubmit}>*/}
+        {/*          <use href={`/sprite.svg#icon-mail-arrow`} />*/}
+        {/*        </svg>*/}
+        {/*      </div>*/}
+        {/*    </form>*/}
+        {/*  </div>*/}
+        {/*</li>*/}
         <li>
           <h3 className={classes.contactsTitle}>{en.socialMedia}</h3>
           <ul className={classes.linkWrapper}>
             <li className={classes.socialLink}>
-              <a
-                className={classes.socialLink}
-                target='blank'
-                href='https://www.linkedin.com/company/mendee/'>
-                {en.linkedin}
+              <a className={classes.socialLink} target='blank' href=''>
+                <svg className={styles.socialLink__iconColor}>
+                  <use href={`/colorSprite.svg#icon-linkedin`} />
+                </svg>
               </a>
             </li>
             <li className={classes.socialLink}>
-              <a
-                className={classes.socialLink}
-                target='blank'
-                href='https://www.instagram.com/mendee_digital/'>
-                {en.instagram}
+              <a className={classes.socialLink} target='blank' href=''>
+                <svg className={styles.socialLink__iconColor}>
+                  <use href={`/colorSprite.svg#icon-facebook`} />
+                </svg>
               </a>
             </li>
             <li className={classes.socialLink}>
@@ -76,7 +74,19 @@ const Contacts = () => {
                 className={classes.socialLink}
                 target='blank'
                 href='https://twitter.com/mendee_digital'>
-                {en.mendeeTwitter}
+                <svg className={styles.socialLink__iconColor}>
+                  <use href={`/colorSprite.svg#icon-instagram`} />
+                </svg>
+              </a>
+            </li>
+            <li className={classes.socialLink}>
+              <a
+                className={classes.socialLink}
+                target='blank'
+                href='https://twitter.com/mendee_digital'>
+                <svg className={styles.socialLink__iconColor}>
+                  <use href={`/colorSprite.svg#icon-github`} />
+                </svg>
               </a>
             </li>
           </ul>
@@ -88,8 +98,11 @@ const Contacts = () => {
               <a
                 className={classes.socialLink}
                 target='blank'
-                href='mailto:hello@mendee.digital'>
-                {en.email}
+                href={`mailto:${en.email}`}>
+                send email
+                <svg className={classes.socialLink__icon}>
+                  <use href={`/spiceSprite.svg#icon-send`} />
+                </svg>
               </a>
             </li>
             {/* <li className={classes.socialLink}>
@@ -100,21 +113,21 @@ const Contacts = () => {
           </ul>
         </li>
       </ul>
-      <div className={classes.imageContainer}>
-        {/* <Image className={classes.image} src={cubes} alt='cubes' /> */}
-        <picture>
-          <source
-            className={classes.image}
-            srcSet='/images/3drectangles.webp'
-            type='image/webp'
-          />
-          <img
-            className={classes.image}
-            src='/images/3drectangles.webp'
-            alt='contact us picture'
-          />
-        </picture>
-      </div>
+      {/*<div className={classes.imageContainer}>*/}
+      {/*  /!* <Image className={classes.image} src={cubes} alt='cubes' /> *!/*/}
+      {/*  <picture>*/}
+      {/*    <source*/}
+      {/*      className={classes.image}*/}
+      {/*      srcSet='/images/3drectangles.webp'*/}
+      {/*      type='image/webp'*/}
+      {/*    />*/}
+      {/*    <img*/}
+      {/*      className={classes.image}*/}
+      {/*      src='/images/3drectangles.webp'*/}
+      {/*      alt='contact us picture'*/}
+      {/*    />*/}
+      {/*  </picture>*/}
+      {/*</div>*/}
     </div>
   )
 }
