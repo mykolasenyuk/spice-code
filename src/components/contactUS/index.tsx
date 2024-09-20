@@ -56,7 +56,7 @@ const Contacts = () => {
           <h3 className={classes.contactsTitle}>{en.socialMedia}</h3>
           <ul className={classes.linkWrapper}>
             <li className={classes.socialLink}>
-              <a className={classes.socialLink} target='blank' href=''>
+              <a className={classes.socialLink} target='blank' href='https://www.linkedin.com/company/spicecode-solution'>
                 <svg className={styles.socialLink__iconColor}>
                   <use href={`/colorSprite.svg#icon-linkedin`} />
                 </svg>
@@ -73,7 +73,7 @@ const Contacts = () => {
               <a
                 className={classes.socialLink}
                 target='blank'
-                href='https://twitter.com/mendee_digital'>
+                href=''>
                 <svg className={styles.socialLink__iconColor}>
                   <use href={`/colorSprite.svg#icon-instagram`} />
                 </svg>
@@ -83,7 +83,7 @@ const Contacts = () => {
               <a
                 className={classes.socialLink}
                 target='blank'
-                href='https://twitter.com/mendee_digital'>
+                href=''>
                 <svg className={styles.socialLink__iconColor}>
                   <use href={`/colorSprite.svg#icon-github`} />
                 </svg>

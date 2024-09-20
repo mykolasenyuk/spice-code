@@ -38,7 +38,7 @@ const Footer = () => {
           <h6 className={styles.footer__title}>{en.socialMedia}</h6>
           <ul className={styles.footer__socialList}>
             <li>
-              <a className={styles.socialLink} target='blank' href=''>
+              <a className={styles.socialLink} target='blank' href='https://www.linkedin.com/company/spicecode-solution'>
                 <svg className={styles.socialLink__iconColor}>
                   <use href={`/colorSprite.svg#icon-linkedin`} />
                 </svg>
