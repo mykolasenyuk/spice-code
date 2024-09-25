@@ -36,11 +36,11 @@
   width: 40px;
   height: 40px;
   fill: #eaeaea;
+  transition: all 150ms ease-out 110ms;
   transform: rotate(180deg);
   &:hover,
   :focus {
-    animation: rotate-scale-up 0.65s linear both;
-
+    transform: scale(1.2);
     fill: #fae746;
   }
 }
