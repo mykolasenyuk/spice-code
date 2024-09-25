@@ -14,6 +14,16 @@ export const menuList = [
 
 export const serviceList = [
   {
+    text: en.projectDiscovery,
+    id: uuid(),
+    description: en.projectDiscoveryDescr,
+  },
+  {
+    text: en.mvpDevelopment,
+    id: uuid(),
+    description: en.mvpDescription,
+  },
+  {
     text: en.ChatbotsAIBasedSolutions,
     id: uuid(),
     description: en.ChatbotsAIBasedSolution,
@@ -29,15 +39,21 @@ export const serviceList = [
     description: en.UIUXDesign,
   },
   {
-    text: en.CommercialSustainableStartUpSupport,
+    text: en.qAndATesting,
     id: uuid(),
-    description: en.CommercialSustainableStartUpSupportDes,
+    description: en.qAndATestingDescr,
   },
-  {
-    text: en.systemAdministrationInfrastructureSupport,
-    id: uuid(),
-    description: en.systemAdministrationInfrastructureSupportDes,
-  },
+  // {
+  //   text: en.CommercialSustainableStartUpSupport,
+  //   id: uuid(),
+  //   description: en.CommercialSustainableStartUpSupportDes,
+  // },
+  // {
+  //   text: en.systemAdministrationInfrastructureSupport,
+  //   id: uuid(),
+  //   description: en.systemAdministrationInfrastructureSupportDes,
+  // },
+
 ]
 
 export const cardList = [

@@ -42,6 +42,15 @@ const en = {
   UIUXDesignServices: 'UI/UX Design Services',
   BespokeWebMobileAppDevelopment: 'Web & Mobile App Development',
   ChatbotsAIBasedSolutions: 'Chatbots',
+  mvpDevelopment:'MVP Development',
+  mvpDescription:'Design a Minimum Viable Product (MVP) that contains just enough features for early use. It is the barebones of functioning systems that have the potential to be scaled and iterated on in the future.',
+  projectDiscovery:'Project Discovery',
+  projectDiscoveryDescr:"We offers clear-cut estimations and feature breakdow for your product concept. Whether you’re a startup or a business, we provide insights into cost, time, and risk.",
+  qAndATesting:'QA/Testing',
+  qAndATestingDescr:'Automated and Manual software testing to deliver your software product on time without compromising its quality',
+
+
+
   systemAdministrationInfrastructureSupportDes:
     'Providing expert system administration and robust infrastructure support to ensure smooth and efficient operations for your IT environment',
   CommercialSustainableStartUpSupport:
